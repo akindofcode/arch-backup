@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm --needed neofetch
 
 sudo pacman -S --noconfirm --needed oblogout
 
-sudo pacman -S --noconfirm --needed tint2 dmenu feh nitrogen rofi xfce4-appfinder gmrun numlockx xfce4-notifyd volumeicon
+sudo pacman -S --noconfirm --needed tint2 dmenu feh nitrogen rofi xfce4-appfinder gmrun numlockx xfce4-notifyd volumeicon compton
 
 packer -S --noconfirm --noedit obmenu3
 
