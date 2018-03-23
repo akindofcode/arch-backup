@@ -6,6 +6,8 @@ sudo pacman -S --noconfirm --needed zsh-theme-powerlevel9k
 
 sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
 # This is what you should do to enjoy the many themes.
 # go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
 # change this to ZSH_THEME="random"
