@@ -17,5 +17,3 @@ echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable
 # echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/dev/x86_64" | sudo tee -a /etc/pacman.conf
 
 sudo pacman -Syuu
-
-sudo pacman -S --noconfirm --needed vivaldi vivaldi-ffmpeg-codecs sublime-text
