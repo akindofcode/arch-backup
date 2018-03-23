@@ -11,7 +11,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 sudo pacman -S --noconfirm --needed powerline-fonts 
 
-packer -S --noconfirm --noedit nerd-fonts-complete
+#packer -S --noconfirm --noedit nerd-fonts-complete
 
 # To hange the theme, go to the hidden file ~/.zshrc
 # change this to ZSH_THEME="agnoster"
