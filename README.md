@@ -1,6 +1,6 @@
 # arch-install
 
-Info on installing arch linux + dot files backup
+Info on installing and ricing arch linux + dot files backup
 
 
 `git clone https://github.com/akindofcode/arch-install.git`
