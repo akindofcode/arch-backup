@@ -24,9 +24,6 @@ packer -S --noconfirm --noedit i3lock-color-git
 
 packer -S --noconfirm --noedit polybar-git
 
-# copy default openbox configuration to ~/.config
-cp -R /etc/xdg/openbox ~/.config
-
 echo "tint2 &" >> ~/.config/openbox/autostart
 echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
 echo "compton -b -c --config ~/.config/compton/compton.conf &" >> ~/.config/openbox/autostart
