@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-sudo pacman -S --noconfirm --needed grep sed bash curl pacman jshon expac
+#sudo pacman -S --noconfirm --needed grep sed bash curl pacman jshon expac
+sudo pacman -S --noconfirm --needed wget
 
 [ -d /tmp/packer ] && rm -rf /tmp/packer
 
