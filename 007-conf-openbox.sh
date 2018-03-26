@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# copy default openbox configuration to ~/.config
+cp -R /etc/xdg/openbox ~/.config
+
 sudo pacman -S --noconfirm --needed obconf
 
 sudo pacman -S --noconfirm --needed lxappearance-gtk3 lxappearance-obconf-gtk3 
@@ -19,9 +22,9 @@ packer -S --noconfirm --noedit obmenu-generator
 
 packer -S --noconfirm --noedit obkey
 
-packer -S --noconfirm --noedit i3lock-color-git
+#packer -S --noconfirm --noedit i3lock-color-git
 
-packer -S --noconfirm --noedit polybar-git
+#packer -S --noconfirm --noedit polybar-git
 
 echo "tint2 &" >> ~/.config/openbox/autostart
 echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
