@@ -8,6 +8,7 @@ Info on installing arch linux + dot files backup
 
 Themes
 
+`git clone https://github.com/addy-dclxvi/Openbox-Theme-Collections ~/.themes`
 `git clone https://github.com/addy-dclxvi/gtk-theme-collections ~/.themes`
 
 ### Microcode updates
