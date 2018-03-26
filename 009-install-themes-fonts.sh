@@ -10,3 +10,5 @@ packer -S --noconfirm --noedit breeze-default-cursor-theme
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-extra
 
 packer -S --noconfirm --noedit ttf-font-awesome-4
+
+cp -r .themes ~/.themes
