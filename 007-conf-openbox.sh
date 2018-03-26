@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-#obconf is gtk2 and not needed if lxappearance-obconf-gtk3 installed ?? 
-# sudo pacman -S --noconfirm --needed obconf
+sudo pacman -S --noconfirm --needed obconf
 
 sudo pacman -S --noconfirm --needed lxappearance-gtk3 lxappearance-obconf-gtk3 
 
