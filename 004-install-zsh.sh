@@ -11,6 +11,8 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 sudo pacman -S --noconfirm --needed powerline-fonts 
 
+fc-cache
+
 #packer -S --noconfirm --noedit nerd-fonts-complete
 
 # To change the theme, go to the hidden file ~/.zshrc
