@@ -1,0 +1,118 @@
+#!/bin/bash
+#    al-help-pipemenu - an Openbox pipemenu for displaying help files
+#    Copyright (C) 2015 damo    <damo@bunsenlabs.org>
+#    Borrowed with love by the ArchLabs Boys.
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#	Renamed for ARCHLabs
+
+HELP='    al-help-pipemenu an Openbox Pipe Menu for displaying help files
+    It should normally be called from an openbox menu.
+
+Options (usually passed from the menu):
+    -h --help   show this message
+
+    If al-help-pipemenu is called with no options (the usual method),
+    it will output an xml openbox pipemenu displaying various help files,
+    both online and on the system.
+'
+# look for a help option somewhere
+for i in "$@"
+do
+    case "$i" in
+    -h|--help)
+        echo "$HELP"
+        exit 0
+        ;;
+    esac
+done
+
+BL_COMMON_LIBDIR='/usr/lib/archlabs/common'
+
+if ! . "$BL_COMMON_LIBDIR/al-include.cfg" 2> /dev/null; then
+    echo $"Error: Failed to source al-include.cfg in $BL_COMMON_LIBDIR" >&2
+    exit 1
+fi
+
+menuStart
+menuSeparator 'Arch Linux Online'
+menuSeparator
+menuItem 'Arch Linux Homepage' 'vivaldi-stable "https://www.archlinux.org/"'
+menuItem 'Arch Linux Wiki' 'vivaldi-stable "https://wiki.archlinux.org/"'
+menuItem 'Arch Linux Reddit' 'vivaldi-stable "https://www.reddit.com/r/archlinux/"'
+menuItem 'Arch Linux Forums' 'vivaldi-stable "https://bbs.archlinux.org/"'
+
+menuSeparator 'Personalization'
+# menuSeparator
+# menuItem 'Forum Basic Help & Support' 'vivaldi-stable "http://archlabs.prophpbb.com/forum7.html"'
+# menuItem 'Scripts, Tutorials & Tips' 'vivaldi-stable "https://bbs.archlinux.org/viewforum.php?id=33"'
+
+menuSeparator
+
+menuSubmenu 'OpenboxWWW' 'Openbox'
+menuSubmenu 'ObWWW' 'Openbox Website'
+menuItem 'Openbox Homepage' 'vivaldi-stable "http://openbox.org/"'
+menuItem 'Openbox Getting Started' 'vivaldi-stable "http://openbox.org/wiki/Help:Getting_started"'
+menuItem 'Openbox Documentation' 'vivaldi-stable "http://openbox.org/wiki/Help:Contents"'
+menuItem 'Openbox FAQs' 'vivaldi-stable "http://openbox.org/wiki/Help:FAQ"'
+menuSubmenuEnd
+menuItem 'Arch Wiki Openbox Guide' 'vivaldi-stable "http://wiki.archlinux.org/index.php/Openbox"'
+menuItem 'Debian Wiki Openbox Guide' 'vivaldi-stable "https://wiki.debian.org/Openbox"'
+menuItem 'Urukramas Openbox Guide' 'vivaldi-stable "https://urukrama.wordpress.com/openbox-faq/"'
+menuItem 'Openbox Reddit' 'vivaldi-stable "https://www.reddit.com/r/openbox/"'
+menuSubmenuEnd
+
+menuSubmenu 'Tint2WWW' 'Tint2'
+menuItem 'Tint2 Wiki: FAQ' 'vivaldi-stable "https://gitlab.com/o9000/tint2/wikis/FAQ"'
+menuItem 'Tint2 Wiki: Configuration' 'vivaldi-stable "https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md"'
+menuItem 'Tint2 Forum Thread' 'vivaldi-stable "https://forums.bunsenlabs.org/viewtopic.php?id=254"'
+menuItem 'Tint2 Man Pages' 'termite -e "man tint2" -t "tint2 man page"'
+menuSubmenuEnd
+
+menuSubmenu 'ConkyWWW' 'Conky'
+menuItem 'Conky Wiki' 'vivaldi-stable "https://github.com/brndnmtthws/conky/wiki"'
+menuItem 'Conky Archive' 'vivaldi-stable "http://crunchbang.org/forums/viewtopic.php?pid=371424"'
+menuItem 'Conky Reddit' 'vivaldi-stable "https://www.reddit.com/r/conky/"'
+menuItem 'Conky Man Pages' 'termite -e "man conky"'
+menuSubmenuEnd
+
+menuSeparator
+
+menuSubmenu 'ThemesWWW' 'Theme Resources'
+menuItem 'Bunsenlabs on DeviantArt' 'vivaldi-stable "http://bunsenlabs.deviantart.com/"'
+menuItem 'Eye Candy Linux DeviantArt' 'vivaldi-stable "http://eye-candy-linux.deviantart.com/"'
+menuItem 'Box-Look.org' 'vivaldi-stable "http://www.box-look.org"'
+menuItem 'Gnome-Look.org' 'vivaldi-stable "http://gnome-look.org/"'
+menuItem 'Eye Candy Linux Google+' 'vivaldi-stable "https://plus.google.com/u/0/communities/104794997718869399105"'
+menuItem 'UnixPorn' 'vivaldi-stable "https://www.reddit.com/r/unixporn/"'
+menuItem 'nixers.net' 'vivaldi-stable "http://nixers.net/"'
+menuItem 'dotshare.it' 'vivaldi-stable "http://dotshare.it/"'
+menuSubmenuEnd
+
+menuSeparator 'Man Pages'
+menuSeparator
+menuItem 'Termite' 'termite -e "man termite" -t "termite man page"'
+menuItem 'Compositor' 'termite -e "man compton" -t "compositor man page"'
+menuItem 'Dmenu' 'termite -e "man dmenu" -t "dmenu man page"'
+menuItem 'Xrandr' 'termite -e "man xrandr" -t "xrandr man page"'
+menuItem 'Yad' 'termite -e "man yad" -t "yad man page"'
+
+menuSeparator 'Wikis'
+menuSeparator
+menuItem 'Arch Wiki' 'vivaldi-stable "https://wiki.archlinux.org/index.php/Table_of_contents"'
+menuItem 'Termite' 'vivaldi-stable "https://wiki.archlinux.org/index.php/termite"'
+
+menuEnd
+
