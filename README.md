@@ -24,7 +24,7 @@ The patch also takes an argument for menu corners
 
 ### Tint2
 
-`https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md#executor`
+https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
 
 ### Microcode updates
 
