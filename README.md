@@ -16,11 +16,15 @@ The patch also takes an argument for menu corners
 
 `<cornerRadius menu="yes">8</cornerRadius>`
 
-Themes
+### Themes
 
 `git clone https://github.com/addy-dclxvi/Openbox-Theme-Collections ~/.themes`
 
 `git clone https://github.com/addy-dclxvi/gtk-theme-collections ~/.themes`
+
+### Tint2
+
+`https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md#executor`
 
 ### Microcode updates
 
