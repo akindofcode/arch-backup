@@ -26,6 +26,10 @@ The patch also takes an argument for menu corners
 
 https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
 
+https://github.com/addy-dclxvi/Tint2-Theme-Collections
+
+https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2
+
 ### Microcode updates
 
 ### Silent boot
