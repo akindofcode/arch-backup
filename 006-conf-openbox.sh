@@ -26,8 +26,8 @@ packer -S --noconfirm --noedit obkey
 
 #packer -S --noconfirm --noedit polybar-git
 
-echo "tint2 &" >> ~/.config/openbox/autostart
 echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
 echo "compton -b -c --config ~/.config/compton/compton.conf &" >> ~/.config/openbox/autostart
 echo "volumeicon &" >> ~/.config/openbox/autostart
 echo "numlockx &" >> ~/.config/openbox/autostart
+echo "tint2 &" >> ~/.config/openbox/autostart
