@@ -2,14 +2,19 @@
 
 Info on installing and ricing arch linux + dot files backup
 
+clean install + lightdm, openbox, git, vim rxvt-unicode, ntfs-3g
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
-###openbox-patched
+### openbox-patched
+
 Add this line to the `theme` section of the Openbox config
-<cornerRadius>8</cornerRadius>
+
+`<cornerRadius>8</cornerRadius>`
+
 The patch also takes an argument for menu corners
-<cornerRadius menu="yes">8</cornerRadius>
+
+`<cornerRadius menu="yes">8</cornerRadius>`
 
 Themes
 
