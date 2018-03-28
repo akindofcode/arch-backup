@@ -22,6 +22,10 @@ The patch also takes an argument for menu corners
 
 `git clone https://github.com/addy-dclxvi/gtk-theme-collections ~/.themes`
 
+### wallpaper
+
+´nitrogen ~/wallpapers´
+
 ### Tint2
 
 https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
