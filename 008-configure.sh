@@ -10,6 +10,10 @@ cp .config/obmenu-generator/* ~/.config/obmenu-generator
 mkdir -p ~/.config/nitrogen
 cp .config/nitrogen/* ~/.config/nitrogen
 
+#copy termite configuration
+mkdir -p ~/.config/termite
+cp .config/termite/* ~/.config/termite
+
 #copy pipelines to /usr/bin
 sudo cp pipelines/al-* /usr/bin
 sudo chown root:root /usr/bin/al-*
