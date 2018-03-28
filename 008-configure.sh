@@ -6,6 +6,10 @@ mkdir -p ~/.config/obmenu-generator
 cp .config/openbox/* ~/.config/openbox
 cp .config/obmenu-generator/* ~/.config/obmenu-generator
 
+# copy .profile
+
+# copy .zshrc
+
 #copy nitrogen configuration
 mkdir -p ~/wallpapers
 cp -R wallpapers/* ~/wallpapers
