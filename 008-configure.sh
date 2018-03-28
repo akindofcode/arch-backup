@@ -7,6 +7,9 @@ cp .config/openbox/* ~/.config/openbox
 cp .config/obmenu-generator/* ~/.config/obmenu-generator
 
 #copy nitrogen configuration
+mkdir -p ~/wallpapers
+cp -R wallpapers ~/wallpapers
+
 mkdir -p ~/.config/nitrogen
 cp .config/nitrogen/* ~/.config/nitrogen
 
