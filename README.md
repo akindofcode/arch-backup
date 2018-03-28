@@ -2,7 +2,7 @@
 
 Info on installing and ricing arch linux + dot files backup
 
-clean install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
+clean install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g, nvidia
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
