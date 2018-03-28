@@ -24,7 +24,7 @@ The patch also takes an argument for menu corners
 
 ### wallpaper
 
-´nitrogen ~/wallpapers´
+`nitrogen ~/wallpapers`
 
 ### Tint2
 
