@@ -29,6 +29,14 @@ clean install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g, nvidia
 
 `nitrogen ~/wallpapers`
 
+### pipelines, toys...
+
+/.bin
+
+You can set your environment for Openbox in the ~/.config/openbox/environment.
+Just add
+PATH="$HOME/.bin:$PATH"; export PATH
+
 ### Tint2
 
 https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
