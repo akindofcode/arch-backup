@@ -21,6 +21,10 @@ cp .config/termite/* ~/.config/termite
 sudo cp pipelines/al-* /usr/bin
 sudo chown root:root /usr/bin/al-*
 
+#copy al-include.cfg to /usr/lib/archlabs/common
+mkdir -p /usr/lib/archlabs/common
+cp pipelines/al-include.cfg /usr/lib/archlabs/common/
+
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
 sudo cp -R vivaldi/arc /opt/vivaldi/resources/vivaldi/style
