@@ -1,7 +1,10 @@
 #!/bin/bash
 
 #copy openbox configuration
-cp -R .config ~/.config
+mkdir -p .config/openbox
+mkdir -p .config/obemenu-generator
+cp .config/openbox/* ~/.config/openbox
+cp .config/obmenu-generator/* ~/.config/obmenu-generator
 
 #copy pipelines to /usr/bin
 sudo cp pipelines/al-* /usr/bin
