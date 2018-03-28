@@ -11,6 +11,8 @@ sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji noto-fonts-extra
 
 packer -S --noconfirm --noedit ttf-font-awesome-4
 
+mkdir -p ~/.themes
 cp -R .themes ~/.themes
 
+mkdir -p ~/wallpapers
 cp -R wallpapers ~/wallpapers
