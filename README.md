@@ -9,13 +9,20 @@ clean install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 ### xrandr
 
 #first screen only
-xrandr --output DVI-I-1 --auto --output DVI-D-0 --off 
+
+`xrandr --output DVI-I-1 --auto --output DVI-D-0 --off`
+
 #second screen only
-xrandr --output DVI-I-1 --off --output DVI-D-0 --auto
+
+`xrandr --output DVI-I-1 --off --output DVI-D-0 --auto`
+
 #extend
-xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of
+
+`xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of`
+
 #mirror
-xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1 
+
+`xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1`
 
 
 ### wallpaper
