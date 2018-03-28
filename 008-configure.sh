@@ -2,13 +2,13 @@
 
 #copy openbox configuration
 mkdir -p ~/.config/openbox
-mkdir -p ~/.config/obemenu-generator
+mkdir -p ~/.config/obmenu-generator
 cp .config/openbox/* ~/.config/openbox
 cp .config/obmenu-generator/* ~/.config/obmenu-generator
 
 #copy nitrogen configuration
 mkdir -p ~/wallpapers
-cp -R wallpapers ~/wallpapers
+cp -R wallpapers/* ~/wallpapers
 
 mkdir -p ~/.config/nitrogen
 cp .config/nitrogen/* ~/.config/nitrogen
