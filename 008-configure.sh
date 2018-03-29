@@ -29,6 +29,9 @@ sudo chown root:root /usr/bin/al-*
 sudo mkdir -p /usr/lib/archlabs/common
 sudo mv /usr/bin/al-include.cfg /usr/lib/archlabs/common/
 
+#copy local pipelines (can be edited)
+cp /usr/bin/al-* ~/.bin/
+
 #copy toys
 mkdir -p ~/.toys
 cp .toys/* /.toys/
