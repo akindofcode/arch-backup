@@ -29,6 +29,10 @@ sudo chown root:root /usr/bin/al-*
 sudo mkdir -p /usr/lib/archlabs/common
 sudo mv /usr/bin/al-include.cfg /usr/lib/archlabs/common/
 
+#copy toys
+mkdir -p ~/.toys
+cp .toys/* /.toys/
+
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
 sudo cp -R vivaldi/arc /opt/vivaldi/resources/vivaldi/style
