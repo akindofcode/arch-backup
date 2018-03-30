@@ -3,8 +3,12 @@
 #copy openbox configuration
 mkdir -p ~/.config/openbox
 mkdir -p ~/.config/obmenu-generator
-cp .config/openbox/* ~/.config/openbox
-cp .config/obmenu-generator/* ~/.config/obmenu-generator
+cp .config/openbox/* ~/.config/openbox/
+cp .config/obmenu-generator/* ~/.config/obmenu-generator/
+
+#copy compton configuration
+mkdir -p ~/.config/compton
+cp .config/compton/* ~/.config/compton/
 
 # copy .profile
 
@@ -12,17 +16,17 @@ cp .config/obmenu-generator/* ~/.config/obmenu-generator
 
 #copy nitrogen configuration
 mkdir -p ~/wallpapers
-cp -R wallpapers/* ~/wallpapers
+cp wallpapers/* ~/wallpapers/
 
 mkdir -p ~/.config/nitrogen
-cp .config/nitrogen/* ~/.config/nitrogen
+cp .config/nitrogen/* ~/.config/nitrogen/
 
 #copy termite configuration
 mkdir -p ~/.config/termite
-cp .config/termite/* ~/.config/termite
+cp .config/termite/* ~/.config/termite/
 
 #copy pipelines to /usr/bin
-sudo cp pipelines/al-* /usr/bin
+sudo cp pipelines/al-* /usr/bin/
 sudo chown root:root /usr/bin/al-*
 
 #move al-include.cfg to /usr/lib/archlabs/common
