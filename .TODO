@@ -8,3 +8,21 @@ music
 video
 qbittorrent
 foobar2k in wine
+
+undecorate certain windows in ~/.config/openbox/rc.xml
+<applications>
+#undecorate termite windows
+  <application class="Termite">
+  <decor>no</decor>
+  <maximize>yes</maximize>
+  </application>
+</applications>
+
+<applications>
+#undecorate and always on-top MPV windows
+  <application class="mpv">
+    <decor>no</decor>
+    <maximize>yes</maximize>
+    <layer>above</layer>
+  </application>
+</applications>
