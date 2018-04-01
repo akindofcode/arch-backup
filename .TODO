@@ -8,6 +8,7 @@ music
 video
 qbittorrent
 foobar2k in wine
+pywal / wpgtk
 
 undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
