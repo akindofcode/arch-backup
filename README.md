@@ -6,6 +6,10 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
+001-init
+
+nvidia-settings
+
 ### xrandr
 
 #first screen only
