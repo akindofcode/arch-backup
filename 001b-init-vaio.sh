@@ -16,4 +16,5 @@ sudo chown root:root /etc/polkit-1/rules.d/00-mount-internal.rules
 sudo pacman -S --noconfirm --needed broadcom-wl-dkms
 #sudo mkinitcpio -p linux
 
+echo "use nmtui to configure wifi connection"
 echo "Please restart to apply changes"
