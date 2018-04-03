@@ -2,10 +2,6 @@
 
 > automate xrandr (keybinds) and only one display on boot
 
-> autostart order of boot (first compton)
-
-> rc.xml IMLC -> LIMC
-
 > undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
 #undecorate termite windows
@@ -26,15 +22,8 @@
 
 # other
 
-> add .toys path to environment (done in git)
-
 > modify pipelines and actualize git
     sudo pacman exo or xdg-utils (add to git)
-
-> convert wallpapers
-    mogrify is part of the ImageMagick suite of tools for image processing.
-    mogrify -format jpg *.png
-    git rm *.png
 
 > config sublime text
 
