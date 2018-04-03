@@ -2,9 +2,14 @@
 
 Info on installing and ricing arch linux + dot files backup
 
-clean install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g, nvidia
+Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g, nvidia
 
 `git clone https://github.com/akindofcode/arch-install.git`
+
+### 001-init
+
+Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline (server display configuration - advanced)
+http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this
 
 ### xrandr
 
