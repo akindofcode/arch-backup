@@ -15,6 +15,7 @@ video
 qbittorrent
 foobar2k in wine
 pywal / wpgtk
+yay / trizen
 
 undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
