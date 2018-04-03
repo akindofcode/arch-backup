@@ -13,6 +13,7 @@ cp .config/compton/* ~/.config/compton/
 # copy .profile
 
 # copy .zshrc
+cp .zshrc ~/
 
 #copy nitrogen configuration
 mkdir -p ~/wallpapers
