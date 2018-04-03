@@ -1,3 +1,5 @@
+automate xrandr (keybinds) and only one display on boot
+
 add .toys path to environment (done in git)
 
 modify pipelines and actualize git
