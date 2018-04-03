@@ -34,6 +34,10 @@ http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-thi
 
 `nitrogen ~/wallpapers`
 
+convert to jpg
+
+`mogrify -format jpg *.png`
+
 ### pipelines, toys...
 
 /.bin
