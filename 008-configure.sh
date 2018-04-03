@@ -34,11 +34,12 @@ sudo mkdir -p /usr/lib/archlabs/common
 sudo mv /usr/bin/al-include.cfg /usr/lib/archlabs/common/
 
 #copy local pipelines (can be edited)
+mkdir -p ~/.bin
 cp /usr/bin/al-* ~/.bin/
 
 #copy toys
 mkdir -p ~/.toys
-cp .toys/* /.toys/
+cp .toys/* ~/.toys/
 
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
