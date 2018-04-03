@@ -12,6 +12,10 @@ git config --global push.default simple
 sudo cp init/blacklist.conf /etc/modprobe.d/
 sudo chown root:root /etc/modprobe.d/blacklist.conf
 
+
+#nvidia-settings
+sudo pacman -S --needed --noconfirm nvidia-settings
+
 # fix big fonts
 sudo nvidia-xconfig --no-use-edid-dpi
 
