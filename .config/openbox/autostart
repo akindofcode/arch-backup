@@ -22,7 +22,7 @@ compton -b -c --config ~/.config/compton/compton.conf &
 
 tint2 &
 
-polybar example &
+#polybar example &
 
 numlockx & 
 
