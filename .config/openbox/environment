@@ -10,3 +10,4 @@
 # http://www.google.com/search?q=how+to+set+keyboard+layout+xorg
 
 PATH="$HOME/.bin:$PATH"; export PATH
+PATH="$HOME/.toys:$PATH"; export PATH
