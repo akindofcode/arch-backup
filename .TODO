@@ -21,6 +21,7 @@
 > test polybar
 
 > music 
+    mpd (autostart)
     nmcpp
     popup toy
     foobar2k in wine
