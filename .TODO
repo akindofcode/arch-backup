@@ -30,6 +30,8 @@
 > config pcmanfm
 
 > config tint2
+    https://github.com/fikriomar16/Tint2-Collections
+    https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/ShareTechMono/complete
 
 > test polybar
     https://github.com/rmw5601/dotfiles/tree/master/config/polybar
