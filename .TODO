@@ -43,6 +43,7 @@
 > config tint2
 
 > test polybar
+    https://github.com/rmw5601/dotfiles/tree/master/config/polybar
 
 > music 
     mpd (autostart)
