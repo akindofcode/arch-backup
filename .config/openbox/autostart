@@ -16,13 +16,13 @@
 #
 #xfce-mcs-manager &
 
-nitrogen --restore & # restore the background chosen with nitrogen
-
 compton -b -c --config ~/.config/compton/compton.conf &
+
+nitrogen --restore & # restore the background chosen with nitrogen
 
 tint2 &
 
-polybar example &
+#polybar example &
 
 numlockx & 
 
@@ -30,4 +30,4 @@ numlockx &
 
 (sleep 2; nm-applet) &
 
-(sleep 3; mpd ~/.config/mpd/mpd.conf) &
+#(sleep 3; mpd ~/.config/mpd/mpd.conf) &
