@@ -1,7 +1,11 @@
 add .toys to environment
 delete non-working toys
 modify pipelines and actualize git
-config sublime
+
+convert wallpapers
+
+config sublime text
+config pcmanfm
 config tint2
 test polybar
 music
