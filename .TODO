@@ -3,6 +3,8 @@ delete non-working toys
 modify pipelines and actualize git
 
 convert wallpapers
+mogrify is part of the ImageMagick suite of tools for image processing.
+mogrify -format jpg *.png
 
 config sublime text
 config pcmanfm
