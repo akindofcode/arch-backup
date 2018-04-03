@@ -1,16 +1,18 @@
-popup toy
+add .toys path to environment (done in git)
 
 modify pipelines and actualize git
+sudo pacman exo or xdg-utils (add to git)
 
 convert wallpapers
 mogrify is part of the ImageMagick suite of tools for image processing.
 mogrify -format jpg *.png
+git rm *.png
 
 config sublime text
 config pcmanfm
 config tint2
 test polybar
-music
+music (popup toy)
 video
 qbittorrent
 foobar2k in wine
