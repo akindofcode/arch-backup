@@ -10,6 +10,10 @@ cp .config/obmenu-generator/* ~/.config/obmenu-generator/
 mkdir -p ~/.config/compton
 cp .config/compton/* ~/.config/compton/
 
+#copy tint2 configuration
+mkdir -p ~/.config/tint2
+cp .config/tint2/* ~/.config/tint2/
+
 # copy .profile
 
 # copy .zshrc
