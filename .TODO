@@ -1,5 +1,7 @@
 > automate xrandr (keybinds) and only one display on boot
 
+> autostart order of boot (first compton)
+
 > add .toys path to environment (done in git)
 
 > modify pipelines and actualize git
