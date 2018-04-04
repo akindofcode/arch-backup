@@ -12,7 +12,7 @@ sudo pacman -S --noconfirm --needed noto-fonts
 packer -S --noconfirm --noedit ttf-font-awesome-4
 
 mkdir -p ~/.themes
-cp -R .themes ~/
+cp -r .themes/* ~/.themes/
 
 #install nerd fonts
 mkdir -p ~/.local/share/fonts
