@@ -6,6 +6,10 @@ mkdir -p ~/.config/obmenu-generator
 cp .config/openbox/* ~/.config/openbox/
 cp .config/obmenu-generator/* ~/.config/obmenu-generator/
 
+#copy oblogout configuration 
+mkdir -p /.config/oblogout
+cp .config/oblogout/* /.config/oblogout/
+
 #copy compton configuration
 mkdir -p ~/.config/compton
 cp .config/compton/* ~/.config/compton/
