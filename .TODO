@@ -24,6 +24,10 @@
 
 > clean boot
 
+# oblogout
+    themes: https://github.com/deadsidestar/arcolinux-oblogout-themes
+    modify /.config/oblogout/oblogout.conf
+
 # other
 
 > modify pipelines and actualize git
