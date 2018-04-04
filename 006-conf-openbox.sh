@@ -14,6 +14,8 @@ packer -S --noconfirm --noedit obmenu-generator
 
 packer -S --noconfirm --noedit obkey
 
+packer -S --noconfirm --noedit mons
+
 #packer -S --noconfirm --noedit yad
 
 #packer -S --noconfirm --noedit i3lock-color-git
