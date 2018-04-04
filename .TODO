@@ -1,13 +1,89 @@
 # openbox
 
 > automate xrandr (keybinds) and only one display on boot
+    <keybind key="W-p">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --off</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --off --output DVI-D-0 --auto</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- extend -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- mirror -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1</command>
+      </action>
+    </keybind>
+
+another way: https://github.com/Ventto/mons
+
+packer -S mons --noedit --noconfirm
+
+A-Down A-Left A-Right A-Up
+
+
+    <keybind key="W-p">
+    <!-- cycle monitors -->
+      <action name="Execute">
+        <command>mons -n left</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-F1">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-F2">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-Right">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="A-Left">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
+    <keybind key="A-Up">
+    <!-- Extend -->
+      <action name="Execute">
+        <command>mons -e left</command>
+      </action>
+    </keybind>
+    <keybind key="A-Down">
+    <!-- Mirror -->
+      <action name="Execute">
+        <command>mons -m</command>
+      </action>
+    </keybind>
+
 
 > undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
 #undecorate termite windows
   <application class="Termite">
-  <decor>no</decor>
-  <maximize>yes</maximize>
+    <decor>no</decor>
+    <maximize>yes</maximize>
   </application>
 </applications>
 
@@ -20,17 +96,28 @@
   </application>
 </applications>
 
-# grub
+> oblogout covers both monitors
 
-> clean boot
+~/.config/openbox/rc.xml
+<applications>
+  <application class="oblogout">
+    <position force="yes">
+      <monitor>1</monitor>
+    </position>
+    <fullscreen>yes</fullscreen>
+  </application>
+  ...
+</applications>
+
+# oblogout
+    themes: https://github.com/deadsidestar/arcolinux-oblogout-themes
+    https://github.com/bruhensant/Adeos-Oblogout
+    modify /.config/oblogout/oblogout.conf
+    place themes in .themes or "usr/share/themes"
 
 # other
 
-> install nerd fonts
-    mkdir -p ~/.local/share/fonts
-    cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
-    cd ~/.local/share/fonts && curl -fLo "Shure Tech Mono Nerd Font.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/ShareTechMono/complete/Shure%20Tech%20Mono%20Nerd%20Font%20Complete.ttf
-    fc-cache -fv
+> fonts, themes, icons, wallpapers -> usr/share/...
 
 > modify pipelines and actualize git
     sudo pacman exo or xdg-utils (add to git)
@@ -48,7 +135,7 @@
 
 > music 
     mpd (autostart)
-    nmcpp
+    ncmpcpp
     popup toy
     foobar2k in wine
 
@@ -60,4 +147,6 @@
   
 > yay / trizen
 
+# grub
 
+> clean boot

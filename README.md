@@ -73,3 +73,11 @@ https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2
 ### Microcode updates
 
 ### Silent boot
+
+### Maintenance
+
+`du /var/cache/pacman/pkg -sh`
+
+`pacman -Sc`
+
+`pacman -Scc`

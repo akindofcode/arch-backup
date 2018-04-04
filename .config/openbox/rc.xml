@@ -175,6 +175,7 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="C-S-BackSpace">
@@ -359,7 +360,17 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+    <keybind key="S-W-Return">
+      <action name="Execute">
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
     <keybind key="W-t">
+      <action name="Execute">
+        <command>termite</command>
+      </action>
+    </keybind>
+    <keybind key="W-Return">
       <action name="Execute">
         <command>termite</command>
       </action>
@@ -397,7 +408,7 @@
     </keybind>
     <keybind key="W-h">
       <action name="Execute">
-        <command>gnome-terminal -e htop</command>
+        <command>termite -e htop</command>
       </action>
     </keybind>
     <keybind key="W-v">
@@ -410,11 +421,18 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
+
     <keybind key="W-x">
       <action name="Execute">
         <command>oblogout --config ~/.config/oblogout/oblogout.conf</command>
       </action>
     </keybind>
+    <keybind key="W-Pause">
+      <action name="Execute">
+        <command>oblogout --config ~/.config/oblogout/oblogout.conf</command>
+      </action>
+    </keybind>
+
     <keybind key="W-Escape">
       <action name="Execute">
         <command>xkill</command>
@@ -501,64 +519,10 @@
     <keybind key="A-m">
       <action name="Move"/>
     </keybind>
-    <keybind key="A-t">
-      <action name="Execute">
-        <command>variety -t</command>
-      </action>
-    </keybind>
-    <keybind key="A-f">
-      <action name="Execute">
-        <command>variety -f</command>
-      </action>
-    </keybind>
-    <keybind key="A-p">
-      <action name="Execute">
-        <command>variety -p</command>
-      </action>
-    </keybind>
-    <keybind key="A-Left">
-      <action name="Execute">
-        <command>variety -p</command>
-      </action>
-    </keybind>
-    <keybind key="A-n">
-      <action name="Execute">
-        <command>variety -n</command>
-      </action>
-    </keybind>
-    <keybind key="A-Right">
-      <action name="Execute">
-        <command>variety -n</command>
-      </action>
-    </keybind>
-    <keybind key="A-Down">
-      <action name="Execute">
-        <command>variety --resume</command>
-      </action>
-    </keybind>
-    <keybind key="A-Up">
-      <action name="Execute">
-        <command>variety --pause</command>
-      </action>
-    </keybind>
-    <keybind key="W-Pause">
-      <action name="Execute">
-        <command>oblogout --config ~/.config/oblogout/oblogout.conf</command>
-      </action>
-    </keybind>
     <keybind key="S-W-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>termite</command>
-      </action>
-    </keybind>
-    <keybind key="S-W-Return">
-      <action name="Execute">
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
+
     <keybind key="W-F1">
       <action name="Desktop"/>
     </keybind>
@@ -647,6 +611,52 @@
         <command>xbacklight -10</command>
       </action>
     </keybind>
+
+  <!-- Toggle monitors -->
+    <keybind key="W-p">
+    <!-- cycle monitors -->
+      <action name="Execute">
+        <command>mons -n left</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-F1">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-F2">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
+
+    <keybind key="A-Right">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="A-Left">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
+    <keybind key="A-Up">
+    <!-- Extend -->
+      <action name="Execute">
+        <command>mons -e left</command>
+      </action>
+    </keybind>
+    <keybind key="A-Down">
+    <!-- Mirror -->
+      <action name="Execute">
+        <command>mons -m</command>
+      </action>
+    </keybind>
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -1008,6 +1018,12 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+      <application class="oblogout">
+        <position force="yes">
+          <monitor>1</monitor>
+        </position>
+        <fullscreen>yes</fullscreen>
+      </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
