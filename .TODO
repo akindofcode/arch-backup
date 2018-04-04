@@ -30,6 +30,9 @@ another way: https://github.com/Ventto/mons
 
 packer -S mons --noedit --noconfirm
 
+A-Down A-Left A-Right A-Up
+
+
     <keybind key="W-p">
     <!-- cycle monitors -->
       <action name="Execute">
@@ -48,6 +51,32 @@ packer -S mons --noedit --noconfirm
         <command>mons -s</command>
       </action>
     </keybind>
+
+    <keybind key="A-Right">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="A-Left">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
+    <keybind key="A-Up">
+    <!-- Extend -->
+      <action name="Execute">
+        <command>mons -e left</command>
+      </action>
+    </keybind>
+    <keybind key="A-Down">
+    <!-- Mirror -->
+      <action name="Execute">
+        <command>mons -m</command>
+      </action>
+    </keybind>
+
 
 > undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
@@ -80,10 +109,6 @@ packer -S mons --noedit --noconfirm
   ...
 </applications>
 
-# grub
-
-> clean boot
-
 # oblogout
     themes: https://github.com/deadsidestar/arcolinux-oblogout-themes
     https://github.com/bruhensant/Adeos-Oblogout
@@ -91,6 +116,8 @@ packer -S mons --noedit --noconfirm
     place themes in .themes or "usr/share/themes"
 
 # other
+
+> fonts, themes, icons, wallpapers -> usr/share/...
 
 > modify pipelines and actualize git
     sudo pacman exo or xdg-utils (add to git)
@@ -120,4 +147,6 @@ packer -S mons --noedit --noconfirm
   
 > yay / trizen
 
-> fonts, themes, icons, wallpapers -> usr/share/...
+# grub
+
+> clean boot
