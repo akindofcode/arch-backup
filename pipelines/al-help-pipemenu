@@ -51,6 +51,9 @@ menuItem 'Arch Linux Homepage' 'xdg-open "https://www.archlinux.org/"'
 menuItem 'Arch Linux Wiki' 'xdg-open "https://wiki.archlinux.org/"'
 menuItem 'Arch Linux Reddit' 'xdg-open "https://www.reddit.com/r/archlinux/"'
 menuItem 'Arch Linux Forums' 'xdg-open "https://bbs.archlinux.org/"'
+menuSubmenu 'ArchLinuxWWW' 'Arch Linux Info'
+    menuItem 'Arch Linux Directory Structure' 'xdg-open "https://netarky.com/programming/arch_linux/Arch_Linux_directory_structure.html"'
+menuSubmenuEnd
 
 menuSeparator 'Personalization'
 menuSeparator
