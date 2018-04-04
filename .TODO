@@ -1,6 +1,42 @@
 # openbox
 
 > automate xrandr (keybinds) and only one display on boot
+    <keybind key="W-p">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --off</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --off --output DVI-D-0 --auto</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- extend -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+    <!-- mirror -->
+      <action name="Execute">
+        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1</command>
+      </action>
+    </keybind>
+
+another way:
+
+sudo packer mons --noedit --noconfirm
+
+    <keybind key="W-p">
+    <!-- cycle monitors -->
+      <action name="Execute">
+        <command>mons -n left</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
 
 > undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
