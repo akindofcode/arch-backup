@@ -135,7 +135,7 @@ A-Down A-Left A-Right A-Up
 
 > music 
     mpd (autostart)
-    nmcpp
+    ncmpcpp
     popup toy
     foobar2k in wine
 
