@@ -44,13 +44,16 @@ convert to jpg
 
 You can set your environment for Openbox in the ~/.config/openbox/environment.
 Just add
-PATH="$HOME/.bin:$PATH"; export PATH
+
+`PATH="$HOME/.bin:$PATH"; export PATH`
 
 ### Fonts
 
 install fonts to
+
 /.local/share/fonts or /usr/share/fonts
-fc-cache -fv
+
+`fc-cache -fv`
 
 
 ### Tint2
