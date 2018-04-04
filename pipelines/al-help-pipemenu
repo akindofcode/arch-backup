@@ -1,7 +1,6 @@
 #!/bin/bash
 #    al-help-pipemenu - an Openbox pipemenu for displaying help files
 #    Copyright (C) 2015 damo    <damo@bunsenlabs.org>
-#    Borrowed with love by the ArchLabs Boys.
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -15,8 +14,6 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-#	Renamed for ARCHLabs
 
 HELP='    al-help-pipemenu an Openbox Pipe Menu for displaying help files
     It should normally be called from an openbox menu.
@@ -47,6 +44,7 @@ if ! . "$BL_COMMON_LIBDIR/al-include.cfg" 2> /dev/null; then
 fi
 
 menuStart
+
 menuSeparator 'Arch Linux'
 menuSeparator
 menuItem 'Arch Linux Homepage' 'xdg-open "https://www.archlinux.org/"'
@@ -55,50 +53,40 @@ menuItem 'Arch Linux Reddit' 'xdg-open "https://www.reddit.com/r/archlinux/"'
 menuItem 'Arch Linux Forums' 'xdg-open "https://bbs.archlinux.org/"'
 
 menuSeparator 'Personalization'
-# menuSeparator
-# menuItem 'Forum Basic Help & Support' 'xdg-open "http://archlabs.prophpbb.com/forum7.html"'
-# menuItem 'Scripts, Tutorials & Tips' 'xdg-open "https://bbs.archlinux.org/viewforum.php?id=33"'
-
 menuSeparator
-
 menuSubmenu 'OpenboxWWW' 'Openbox'
-menuSubmenu 'ObWWW' 'Openbox Website'
-menuItem 'Openbox Homepage' 'xdg-open "http://openbox.org/"'
-menuItem 'Openbox Getting Started' 'xdg-open "http://openbox.org/wiki/Help:Getting_started"'
-menuItem 'Openbox Documentation' 'xdg-open "http://openbox.org/wiki/Help:Contents"'
-menuItem 'Openbox FAQs' 'xdg-open "http://openbox.org/wiki/Help:FAQ"'
+    menuSubmenu 'ObWWW' 'Openbox Website'
+        menuItem 'Openbox Homepage' 'xdg-open "http://openbox.org/"'
+        menuItem 'Openbox Getting Started' 'xdg-open "http://openbox.org/wiki/Help:Getting_started"'
+        menuItem 'Openbox Documentation' 'xdg-open "http://openbox.org/wiki/Help:Contents"'
+        menuItem 'Openbox FAQs' 'xdg-open "http://openbox.org/wiki/Help:FAQ"'
+    menuSubmenuEnd
+    menuItem 'Arch Wiki Openbox Guide' 'xdg-open "http://wiki.archlinux.org/index.php/Openbox"'
+    menuItem 'Debian Wiki Openbox Guide' 'xdg-open "https://wiki.debian.org/Openbox"'
+    menuItem 'Urukramas Openbox Guide' 'xdg-open "https://urukrama.wordpress.com/openbox-faq/"'
+    menuItem 'Openbox Reddit' 'xdg-open "https://www.reddit.com/r/openbox/"'
 menuSubmenuEnd
-menuItem 'Arch Wiki Openbox Guide' 'xdg-open "http://wiki.archlinux.org/index.php/Openbox"'
-menuItem 'Debian Wiki Openbox Guide' 'xdg-open "https://wiki.debian.org/Openbox"'
-menuItem 'Urukramas Openbox Guide' 'xdg-open "https://urukrama.wordpress.com/openbox-faq/"'
-menuItem 'Openbox Reddit' 'xdg-open "https://www.reddit.com/r/openbox/"'
-menuSubmenuEnd
-
 menuSubmenu 'Tint2WWW' 'Tint2'
-menuItem 'Tint2 Wiki: FAQ' 'xdg-open "https://gitlab.com/o9000/tint2/wikis/FAQ"'
-menuItem 'Tint2 Wiki: Configuration' 'xdg-open "https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md"'
-menuItem 'Tint2 Forum Thread' 'xdg-open "https://forums.bunsenlabs.org/viewtopic.php?id=254"'
-menuItem 'Tint2 Man Pages' 'termite -e "man tint2" -t "tint2 man page"'
+    menuItem 'Tint2 Wiki: FAQ' 'xdg-open "https://gitlab.com/o9000/tint2/wikis/FAQ"'
+    menuItem 'Tint2 Wiki: Configuration' 'xdg-open "https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md"'
+    menuItem 'Tint2 Forum Thread' 'xdg-open "https://forums.bunsenlabs.org/viewtopic.php?id=254"'
+    menuItem 'Tint2 Man Pages' 'termite -e "man tint2" -t "tint2 man page"'
 menuSubmenuEnd
-
 menuSubmenu 'ConkyWWW' 'Conky'
-menuItem 'Conky Wiki' 'xdg-open "https://github.com/brndnmtthws/conky/wiki"'
-menuItem 'Conky Archive' 'xdg-open "http://crunchbang.org/forums/viewtopic.php?pid=371424"'
-menuItem 'Conky Reddit' 'xdg-open "https://www.reddit.com/r/conky/"'
-menuItem 'Conky Man Pages' 'termite -e "man conky"'
+    menuItem 'Conky Wiki' 'xdg-open "https://github.com/brndnmtthws/conky/wiki"'
+    menuItem 'Conky Archive' 'xdg-open "http://crunchbang.org/forums/viewtopic.php?pid=371424"'
+    menuItem 'Conky Reddit' 'xdg-open "https://www.reddit.com/r/conky/"'
+    menuItem 'Conky Man Pages' 'termite -e "man conky"'
 menuSubmenuEnd
-
-menuSeparator
-
 menuSubmenu 'ThemesWWW' 'Theme Resources'
-menuItem 'UnixPorn' 'xdg-open "https://www.reddit.com/r/unixporn/"'
-menuItem 'Bunsenlabs on DeviantArt' 'xdg-open "http://bunsenlabs.deviantart.com/"'
-menuItem 'Eye Candy Linux DeviantArt' 'xdg-open "http://eye-candy-linux.deviantart.com/"'
-menuItem 'Box-Look.org' 'xdg-open "http://www.box-look.org"'
-menuItem 'Gnome-Look.org' 'xdg-open "http://gnome-look.org/"'
-menuItem 'Eye Candy Linux Google+' 'xdg-open "https://plus.google.com/u/0/communities/104794997718869399105"'
-menuItem 'nixers.net' 'xdg-open "http://nixers.net/"'
-menuItem 'dotshare.it' 'xdg-open "http://dotshare.it/"'
+    menuItem 'UnixPorn' 'xdg-open "https://www.reddit.com/r/unixporn/"'
+    menuItem 'Bunsenlabs on DeviantArt' 'xdg-open "http://bunsenlabs.deviantart.com/"'
+    menuItem 'Eye Candy Linux DeviantArt' 'xdg-open "http://eye-candy-linux.deviantart.com/"'
+    menuItem 'Box-Look.org' 'xdg-open "http://www.box-look.org"'
+    menuItem 'Gnome-Look.org' 'xdg-open "http://gnome-look.org/"'
+    menuItem 'Eye Candy Linux Google+' 'xdg-open "https://plus.google.com/u/0/communities/104794997718869399105"'
+    menuItem 'nixers.net' 'xdg-open "http://nixers.net/"'
+    menuItem 'dotshare.it' 'xdg-open "http://dotshare.it/"'
 menuSubmenuEnd
 
 menuSeparator 'Man Pages'
