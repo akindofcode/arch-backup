@@ -6,8 +6,8 @@
 <applications>
 #undecorate termite windows
   <application class="Termite">
-  <decor>no</decor>
-  <maximize>yes</maximize>
+    <decor>no</decor>
+    <maximize>yes</maximize>
   </application>
 </applications>
 
@@ -18,6 +18,19 @@
     <maximize>yes</maximize>
     <layer>above</layer>
   </application>
+</applications>
+
+> oblogout covers both monitors
+
+~/.config/openbox/rc.xml
+<applications>
+  <application class="oblogout">
+    <position force="yes">
+      <monitor>1</monitor>
+    </position>
+    <fullscreen>yes</fullscreen>
+  </application>
+  ...
 </applications>
 
 # grub
