@@ -46,6 +46,13 @@ You can set your environment for Openbox in the ~/.config/openbox/environment.
 Just add
 PATH="$HOME/.bin:$PATH"; export PATH
 
+### Fonts
+
+install fonts to
+/.local/share/fonts or /usr/share/fonts
+fc-cache -fv
+
+
 ### Tint2
 
 https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
