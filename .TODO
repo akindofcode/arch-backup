@@ -28,7 +28,7 @@
 
 another way: https://github.com/Ventto/mons
 
-sudo packer mons --noedit --noconfirm
+packer -S mons --noedit --noconfirm
 
     <keybind key="W-p">
     <!-- cycle monitors -->
@@ -36,7 +36,18 @@ sudo packer mons --noedit --noconfirm
         <command>mons -n left</command>
       </action>
     </keybind>
-    <keybind key="W-p">
+    <keybind key="W-A-F1">
+    <!-- first screen only -->
+      <action name="Execute">
+        <command>mons -o</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-F2">
+    <!-- second screen only -->
+      <action name="Execute">
+        <command>mons -s</command>
+      </action>
+    </keybind>
 
 > undecorate certain windows in ~/.config/openbox/rc.xml
 <applications>
