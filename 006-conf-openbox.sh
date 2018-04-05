@@ -4,7 +4,7 @@ set -e
 # copy default openbox configuration to ~/.config
 cp -R /etc/xdg/openbox ~/.config
 
-sudo pacman -S --noconfirm --needed obconf lxappearance-gtk3 lxappearance-obconf-gtk3 neofetch oblogout
+sudo pacman -S --noconfirm --needed obconf lxappearance-gtk3 lxappearance-obconf-gtk3 neofetch oblogout zenity
 
 sudo pacman -S --noconfirm --needed tint2 dmenu feh nitrogen rofi xfce4-appfinder gmrun numlockx xfce4-notifyd volumeicon compton
 
