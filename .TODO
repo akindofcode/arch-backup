@@ -2,16 +2,14 @@
 
 > fix window placement when toggling display
 
-> undecorate certain windows in ~/.config/openbox/rc.xml
+> undecorate certain windows 
+~/.config/openbox/rc.xml
 <applications>
 #undecorate termite windows
   <application class="Termite">
     <decor>no</decor>
     <maximize>yes</maximize>
   </application>
-</applications>
-
-<applications>
 #undecorate and always on-top MPV windows
   <application class="mpv">
     <decor>no</decor>
@@ -20,8 +18,7 @@
   </application>
 </applications>
 
-> oblogout covers both monitors
-
+> oblogout covers both monitors (not working)
 ~/.config/openbox/rc.xml
 <applications>
   <application class="oblogout">
@@ -30,14 +27,7 @@
     </position>
     <fullscreen>yes</fullscreen>
   </application>
-  ...
 </applications>
-
-# oblogout
-    themes: https://github.com/deadsidestar/arcolinux-oblogout-themes
-    https://github.com/bruhensant/Adeos-Oblogout
-    modify /.config/oblogout/oblogout.conf
-    place themes in .themes or "usr/share/themes"
 
 # other
 
