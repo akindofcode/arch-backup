@@ -31,12 +31,12 @@
 
 # other
 
-> fonts, themes, icons, wallpapers -> usr/share/...
+> fonts, themes, icons, wallpapers -> usr/share/... ? only packages
 
 > modify pipelines and actualize git
     sudo pacman exo or xdg-utils (add to git)
 
-> config sublime text
+> config sublime text 3
 
 > config pcmanfm
 
