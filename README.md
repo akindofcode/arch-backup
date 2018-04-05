@@ -12,6 +12,8 @@ Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline (server displa
 http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this
 Disable second screen and save
 
+https://github.com/Ventto/mons
+
 ### xrandr
 
 #first screen only
