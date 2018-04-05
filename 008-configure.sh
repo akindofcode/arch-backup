@@ -20,6 +20,9 @@ cp .config/tint2/* ~/.config/tint2/
 
 # copy .profile
 
+# copy .Xresources
+cp .Xresources ~/
+
 # copy .zshrc
 cp .zshrc ~/
 
