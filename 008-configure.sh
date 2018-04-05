@@ -38,7 +38,7 @@ mkdir -p ~/.config/termite
 cp .config/termite/* ~/.config/termite/
 
 #copy pipelines to /usr/bin
-sudo cp pipelines/al-* /usr/bin/
+sudo cp .bin/al-* /usr/bin/
 sudo chown root:root /usr/bin/al-*
 
 #move al-include.cfg to /usr/lib/archlabs/common
