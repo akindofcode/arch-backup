@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-#arc themes and icons
+# arc theme
 packer -S --noconfirm --noedit arc-gtk-theme 
 
 # packer -S --noconfirm --noedit breeze-snow-cursor-theme	
