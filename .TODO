@@ -37,6 +37,7 @@ modify 008 cp .config ~/
 
 install on /usr/share/icons or copy to /.icons
 
+canta-icon-theme-git
 sardi-colora-variations-icons-git
 sardi-flat-colora-variations-icons-git
 sardi-flat-mixing-icons-git
