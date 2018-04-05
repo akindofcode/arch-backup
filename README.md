@@ -8,7 +8,7 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 ### 001-init
 
-Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline (server display configuration - advanced)
+Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline' (server display configuration - advanced)
 
 <http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this>
 
@@ -59,7 +59,6 @@ install fonts to
 /.local/share/fonts or /usr/share/fonts
 
 `fc-cache -fv`
-
 
 ### Tint2
 
