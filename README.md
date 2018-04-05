@@ -9,10 +9,12 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 ### 001-init
 
 Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline (server display configuration - advanced)
-http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this
+
+<http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this>
+
 Disable second screen and save
 
-https://github.com/Ventto/mons
+<https://github.com/Ventto/mons>
 
 ### xrandr
 
@@ -61,11 +63,11 @@ install fonts to
 
 ### Tint2
 
-https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md
+<https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md>
 
-https://github.com/addy-dclxvi/Tint2-Theme-Collections
+<https://github.com/addy-dclxvi/Tint2-Theme-Collections>
 
-https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2
+<https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2>
 
 ### Zsh
 
