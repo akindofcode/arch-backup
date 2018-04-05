@@ -1,3 +1,14 @@
+# scripts
+
+add backup script for dot files
+cp -r ~/.config ~/Projects/arch-install/
+cp ~/.Xresources ~/Projects/arch-install/
+cp ~/.zshrc ~/Projects/arch-install/
+cp -r ~/.toys ~/Projects/arch-install/
+cp -r ~/.bin ~/Projects/arch-install/
+
+modify 008 cp .config ~/
+
 # openbox
 
 > fix window placement when toggling display
