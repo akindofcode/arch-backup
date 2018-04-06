@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-sudo pacman -S --needed --noconfirm mpd
+sudo pacman -S --needed --noconfirm mpd ncmpcpp
 
 installto=$HOME/.config/mpd
 username=$(whoami)
