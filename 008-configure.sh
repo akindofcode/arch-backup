@@ -18,6 +18,10 @@ cp .config/compton/* ~/.config/compton/
 mkdir -p ~/.config/tint2
 cp .config/tint2/* ~/.config/tint2/
 
+#copy pcmanfm configuration
+mkdir -p ~/.config/pcmanfm/default
+cp .config/pcmanfm/default/* ~/.config/pcmanfm/default
+
 # copy .profile
 
 # copy .Xresources
