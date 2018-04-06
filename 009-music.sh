@@ -41,7 +41,7 @@ if test x$DO_CONFIG = xyes;
 	rm -fr $installto
 	mkdir -p $installto/playlists
     touch $installto/log
-	cat > $HOME/.config/.mpd/mpd.conf <<EOF
+	cat > $installto/mpd.conf <<EOF
 music_directory                  "$music_dir"
 db_file                          "$installto/database"
 log_file                         "$installto/log"
