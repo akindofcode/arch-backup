@@ -20,7 +20,11 @@ cp .config/tint2/* ~/.config/tint2/
 
 #copy pcmanfm configuration
 mkdir -p ~/.config/pcmanfm/default
-cp .config/pcmanfm/default/* ~/.config/pcmanfm/default
+cp .config/pcmanfm/default/* ~/.config/pcmanfm/default/
+
+#copy neofetch configuration
+mkdir -p ~/.config/neofetch
+cp ./config/neofetch/* ~/.config/neofetch/
 
 # copy .profile
 
