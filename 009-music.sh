@@ -36,23 +36,23 @@ esac
 
 if test x$DO_CONFIG = xyes;
   then
-	rm -fr $HOME/.mpd
-	mkdir -p $HOME/.mpd/playlists
-    touch $HOME/.mpd/log
-	cat > $HOME/.mpd/mpd.conf <<EOF
+	rm -fr $HOME/.config/.mpd
+	mkdir -p $HOME/.config/.mpd/playlists
+    touch $HOME/.config/.mpd/log
+	cat > $HOME/.config/.mpd/mpd.conf <<EOF
 music_directory                  "$music_dir"
-db_file                          "$HOME/.mpd/database"
-log_file                         "$HOME/.mpd/log"
-pid_file                         "$HOME/.mpd/pid"
-state_file                       "$HOME/.mpd/state"
-playlist_directory               "$HOME/.mpd/playlists"
+db_file                          "$HOME/.config/.mpd/database"
+log_file                         "$HOME/.config/.mpd/log"
+pid_file                         "$HOME/.config/.mpd/pid"
+state_file                       "$HOME/.config/.mpd/state"
+playlist_directory               "$HOME/.config/.mpd/playlists"
 log_level                        "default"
 #password                        "password@read,add,control,admin"
 #default_permissions             "read,add,control,admin"
 #user                            "$username"
 #bind_to_address                 "$interface"
 bind_to_address                  "127.0.0.1"
-bind_to_address                  "$HOME/.mpd/socket"
+bind_to_address                  "$HOME/.config/.mpd/socket"
 port                             "6600"
 gapless_mp3_playback             "yes"
 auto_update                      "yes"
