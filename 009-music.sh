@@ -1,5 +1,8 @@
 #!/bin/bash
 clear
+
+sudo pacman -S --needed --noconfirm mpd
+
 installto=$HOME/.config/mpd
 username=$(whoami)
 interface=$(ip route show | awk '{print $NF}' | tail -1)
