@@ -34,7 +34,7 @@ case $yn in
         *) echo "Please answer yes or no."; exit;;
 esac
 
-if test x$DO_CONFIG = xyes;
+if test x$DO_CONFIG = yes;
   then
 	rm -fr $HOME/.config/.mpd
 	mkdir -p $HOME/.config/.mpd/playlists
