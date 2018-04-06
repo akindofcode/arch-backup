@@ -102,8 +102,8 @@ $AUDIO
 #               format           "44100:16:1"
 #}
 
-replaygain                       "album"
-replaygain_preamp                "0"
+#replaygain                       "album"
+#replaygain_preamp                "0"
 #volume_normalization            "no"
 #audio_buffer_size               "2048"
 #buffer_before_play              "10%"
