@@ -3,6 +3,8 @@ clear
 
 sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc
 
+packer -S --noedit --noconfirm cava beets
+
 installto=$HOME/.config/mpd
 username=$(whoami)
 interface=$(ip route show | awk '{print $NF}' | tail -1)
