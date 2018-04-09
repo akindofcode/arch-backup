@@ -82,7 +82,9 @@ papirus-icon-theme-git
 
 > music 
     mpd (autostart)
-    ncmpcpp
+    ncmpcpp + mpc
+    cava
+    beets
     popup toy
     foobar2k in wine
 
