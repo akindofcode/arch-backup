@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc
+sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc mpv
 
 packer -S --noedit --noconfirm cava beets
 
