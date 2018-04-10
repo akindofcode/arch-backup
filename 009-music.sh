@@ -3,7 +3,19 @@ clear
 
 sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc mpv
 
-packer -S --noedit --noconfirm cava beets
+packer -S --noedit --noconfirm cava 
+
+# install beets
+
+packer -S --noedit --noconfirm beets
+
+sudo pacman -S --needed --noconfirm python-pip
+
+sudo pip install --upgrade pip
+
+# sudo pip install beets-copyartifacts 
+sudo pip install discogs-client
+
 
 installto=$HOME/.config/mpd
 username=$(whoami)
