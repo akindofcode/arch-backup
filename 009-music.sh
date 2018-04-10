@@ -13,7 +13,8 @@ sudo pacman -S --needed --noconfirm python-pip
 
 sudo pip install --upgrade pip
 
-sudo pip install beets-copyartifacts 
+# sudo pip install beets-copyartifacts 
+sudo pip install discogs-client
 
 
 installto=$HOME/.config/mpd
