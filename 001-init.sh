@@ -22,4 +22,9 @@ sudo nvidia-xconfig --no-use-edid-dpi
 sudo cp init/00-mount-internal.rules /etc/polkit-1/rules.d/
 sudo chown root:root /etc/polkit-1/rules.d/00-mount-internal.rules
 
+# fix time
+sudo pacman -S --noconfirm --needed ntp
+sudo ntpd -qg
+hwclock --systohc
+
 echo "Please restart to apply changes"
