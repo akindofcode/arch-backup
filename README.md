@@ -6,6 +6,10 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
+### fix locale
+
+`export LC_CTYPE=$LANG`
+
 ### 001-init
 
 Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline' (server display configuration - advanced)
