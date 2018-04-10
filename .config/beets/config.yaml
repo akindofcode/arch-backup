@@ -4,3 +4,15 @@ library: ~/.beets/musiclibrary.blb
 import:
   move: no
   copy: yes
+
+#plugins: copyartifacts
+plugins: discogs
+
+paths:
+  #default: %upper{$albumartist}/$year - $albumartist - $album {${label}%ifdef{catalognum, - }$catalognum}/$track $title
+  default: %upper{$albumartist}/$year - $albumartist - $album (${label}%ifdef{catalognum, - }$catalognum)/$track - $title
+
+
+
+#copyartifacts:
+#  extensions: .*
