@@ -1,0 +1,6 @@
+directory: /run/media/chema/Games/Music
+library: ~/.beets/musiclibrary.blb
+
+import:
+  move: no
+  copy: yes
