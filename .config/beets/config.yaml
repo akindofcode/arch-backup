@@ -12,3 +12,7 @@ paths:
   ext:log: $albumpath/$albumartist - $album
   ext:cue: $albumpath/$albumartist - $album
   ext:m3u: $albumpath/$albumartist - $album
+
+mpd:
+  host: localhost
+  port: 6600
