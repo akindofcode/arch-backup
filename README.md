@@ -89,3 +89,9 @@ install fonts to
 `pacman -Sc`
 
 `pacman -Scc`
+
+### Music
+
+Beets
+
+https://github.com/sbarakat/beets-copyartifacts#development
