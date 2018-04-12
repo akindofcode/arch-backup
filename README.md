@@ -103,3 +103,8 @@ copyartifacts
 # if copyartifacts doesn't work replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
 # with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
 
+fetchart
+
+<http://beets.readthedocs.io/en/v1.4.6/plugins/fetchart.html>
+
+`beet fetchart -f`
