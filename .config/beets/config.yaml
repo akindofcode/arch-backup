@@ -5,7 +5,7 @@ import:
   move: no
   copy: yes
 
-plugins: discogs copyartifacts
+plugins: discogs copyartifacts fetchart mpdupdate
 
 paths:
   default: %upper{$albumartist}/$year - $albumartist - $album {${label}%ifdef{catalognum, - }$catalognum$}/$track - $title
