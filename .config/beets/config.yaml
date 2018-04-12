@@ -1,12 +1,11 @@
-directory: /run/media/chema/Games/Music
+directory: ~/Music
 library: ~/.beets/musiclibrary.blb
 
 import:
   move: no
   copy: yes
 
-#plugins: copyartifacts
-plugins: discogs
+plugins: discogs copyartifacts
 
 paths:
   #default: %upper{$albumartist}/$year - $albumartist - $album {${label}%ifdef{catalognum, - }$catalognum}/$track $title
