@@ -13,7 +13,11 @@ sudo pacman -S --needed --noconfirm python-pip
 
 sudo pip install --upgrade pip
 
-# sudo pip install beets-copyartifacts 
+sudo pip install beets-copyartifacts
+# if copyartifacts doesn't work
+# replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
+# with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
+
 sudo pip install discogs-client
 
 
