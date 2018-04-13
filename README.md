@@ -100,8 +100,8 @@ copyartifacts
 
 <https://github.com/sbarakat/beets-copyartifacts#development>
 
-# if copyartifacts doesn't work replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
-# with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
+if copyartifacts doesn't work replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
+with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
 
 fetchart
 
