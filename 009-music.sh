@@ -15,6 +15,8 @@ sudo pip install --upgrade pip
 
 sudo pip install discogs-client
 
+sudo pip install pylast
+
 #sudo pip install beets-copyartifacts
 # if copyartifacts doesn't work
 # replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
