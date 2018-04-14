@@ -108,3 +108,8 @@ fetchart
 <http://beets.readthedocs.io/en/v1.4.6/plugins/fetchart.html>
 
 `beet fetchart -f`
+
+Add Music to /etc/fstab
+
+# /dev/sdd1 Music
+/dev/sdd1 /run/media/chema/Music ntfs-3g uid=chema gid=users 0 0
