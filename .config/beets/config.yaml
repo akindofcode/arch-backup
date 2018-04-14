@@ -1,17 +1,23 @@
-directory: ~/Music
-library: ~/.beets/musiclibrary.blb
+#directory: ~/Music
+#library: ~/.beets/musiclibrary.blb
+
+directory: /run/media/chema/Music/Music
+library: /run/media/chema/Music/Music/musiclibrary.blb
 
 import:
   move: no
   copy: yes
 
-plugins: discogs copyartifacts fetchart mpdupdate
+plugins: discogs copyartifacts fetchart lastgenre mpdupdate
 
 paths:
-  default: %upper{$albumartist}/$year - $albumartist - $album {${label}%ifdef{catalognum, - }$catalognum$}/$track - $title
+  default: %upper{$albumartist}/$albumartist [$year] $album {${label}%ifdef{catalognum, - }$catalognum$}/$track - $title
   ext:log: $albumpath/$albumartist - $album
   ext:cue: $albumpath/$albumartist - $album
   ext:m3u: $albumpath/$albumartist - $album
+
+copyartifacts:
+  extensions: .cue .log .m3u .md5 .txt
 
 mpd:
   host: localhost
