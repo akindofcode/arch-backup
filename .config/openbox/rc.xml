@@ -409,6 +409,11 @@
         <command>termite -e cava</command>
       </action>
     </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+        <command>art.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-h">
       <action name="Execute">
         <command>termite -e htop</command>
