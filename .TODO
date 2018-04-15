@@ -81,12 +81,14 @@ papirus-icon-theme-git
     https://github.com/rmw5601/dotfiles/tree/master/config/polybar
 
 > music 
-    mpd (autostart)
+    mpd (autostart) ¿alsa?
     ncmpcpp + mpc
     cava
     beets
     popup toy
     foobar2k in wine
+    art.sh (check when song is playing / change of song)
+
 
 > video
 
