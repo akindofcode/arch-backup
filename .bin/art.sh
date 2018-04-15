@@ -28,6 +28,7 @@ function reset_background
            #scale down the cover to 30% of the original
            #place it 1% away from left and 50% away from top.
            #printf "\e]20;${COVER};70x70+0+00:op=keep-aspect\a"
+           pkill feh
            feh ${COVER}
         else
             reset_background
