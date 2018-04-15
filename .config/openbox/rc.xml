@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Blocks</name>
+    <name>Triste-Crimson</name>
     <!--<titleLayout>NLIMC</titleLayout>-->
     <titleLayout>LIMC</titleLayout>
     <!--
@@ -1022,25 +1022,42 @@
       <fullscreen>yes</fullscreen>
     </application>
     <application title="cava">
-    	<decor>no</decor>
-		<shade>no</shade>
-	    <position force="yes">
-      		<x>-10</x>
-      		<y>10</y>
-      		<monitor>1</monitor>
-		</position>
-	    <size>
-	      <width>300</width>
-	      <height>100</height>
-	    </size>
-	    <focus>no</focus>
-	    <desktop>1</desktop>
-	    <layer>normal</layer>
-	    <iconic>no</iconic>
-	    <skip_pager>no</skip_pager>
-	    <skip_taskbar>no</skip_taskbar>
-	    <fullscreen>no</fullscreen>
-	    <maximized>no</maximized>
+      <decor>no</decor>
+      <shade>no</shade>
+      <position force="yes">
+        <x>-10</x>
+        <y>10</y>
+        <monitor>1</monitor>
+      </position>
+      <size>
+        <width>300</width>
+        <height>100</height>
+      </size>
+      <focus>no</focus>
+      <desktop>1</desktop>
+      <layer>normal</layer>
+      <iconic>no</iconic>
+      <skip_pager>no</skip_pager>
+      <skip_taskbar>yes</skip_taskbar>
+      <fullscreen>no</fullscreen>
+      <maximized>no</maximized>
+    </application>
+    <application title="feh [1 of 1] - /tmp/cover.jpg">
+      <decor>no</decor>
+      <shade>no</shade>
+      <position force="yes">
+        <x>10</x>
+        <y>10</y>
+        <monitor>1</monitor>
+      </position>
+      <focus>no</focus>
+      <desktop>1</desktop>
+      <layer>normal</layer>
+      <iconic>no</iconic>
+      <skip_pager>no</skip_pager>
+      <skip_taskbar>yes</skip_taskbar>
+      <fullscreen>no</fullscreen>
+      <maximized>no</maximized>
     </application>
     <!--
   # this is an example with comments through out. use these to make your
