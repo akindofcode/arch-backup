@@ -81,7 +81,8 @@ int main(int argc, char const *argv[])
  
                 switch(play_state) {
                     case MPD_STATE_PLAY:
-                        if (current_song_id != previous_sond_id && prev_state != play_state) {
+                        // if (current_song_id != previous_sond_id && prev_state != play_state) {
+                    	if (current_song_id != previous_sond_id) {
                             previous_sond_id = current_song_id;
                             if (argc > 3)
                                 system(argv[3]);
