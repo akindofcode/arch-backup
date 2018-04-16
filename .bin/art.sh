@@ -16,7 +16,7 @@ function reset_background
     file="$(mpc --format %file% current)"
     album_dir="${file%/*}"
     [[ -z "$album_dir" ]] && exit 1
-    album_dir="$MUSIC_DIR/FLAC/$album_dir"
+    album_dir="$MUSIC_DIR/$album_dir"
 
     covers="$(find "$album_dir" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\(${album}\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
     src="$(echo -n "$covers" | head -n1)"
@@ -29,7 +29,7 @@ function reset_background
            #place it 1% away from left and 50% away from top.
            #printf "\e]20;${COVER};70x70+0+00:op=keep-aspect\a"
            # pkill feh
-           pkill -f ${COVER}
+           pkill -f 'feh /tmp/cover.jpg'
            feh ${COVER}
         else
             reset_background
