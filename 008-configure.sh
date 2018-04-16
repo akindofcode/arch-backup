@@ -61,6 +61,12 @@ cp /usr/bin/al-* ~/.bin/
 mkdir -p ~/.toys
 cp .toys/* ~/.toys/
 
+# mpdsonglisten daemon for covers
+mkdir -p /.config/systemd/user/
+cp .config/systemd/user/mpdsonglisten.service ~/.config/systemd/user/
+systemctl --user enable mpdsonglisten
+systemctl --user start mpdsonglisten
+
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
 sudo cp -R vivaldi/arc /opt/vivaldi/resources/vivaldi/style
