@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pkill feh
+pkill -f 'feh /tmp/cover.jpg'
