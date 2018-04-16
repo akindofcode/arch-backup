@@ -3,7 +3,7 @@ Description=mpdsonglisten
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/mpdsonglisten localhost 6600 art killart
+ExecStart=/usr/bin/mpdsonglisten localhost 6600 /usr/bin/art /usr/bin/killart
 
 [Install]
 WantedBy=multi-user.target
