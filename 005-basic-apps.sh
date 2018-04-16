@@ -2,6 +2,8 @@
 
 sudo pacman -S --noconfirm --needed vivaldi vivaldi-ffmpeg-codecs termite pcmanfm-gtk3 htop scrot imagemagick
 
+sudo pacman -S --noconfirm --needed thunar ranger w3m
+
 sudo pacman -S --noconfirm --needed sublime-text/sublime-text
 
 # installation of zippers and unzippers
