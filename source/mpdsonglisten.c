@@ -56,7 +56,7 @@ void cancel_signal(int signal)
 int main(int argc, char const *argv[])
 {
     if (argc < 3) {
-        printf("Usage: prog <hostname> <port>");
+        printf("Usage: prog <hostname> <port> <on_play_script> <on_stop_script>");
         return EXIT_FAILURE;
     }
  
