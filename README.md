@@ -111,11 +111,10 @@ fetchart
 
 Add Music to /etc/fstab
 
-# /dev/sdd1 Music
 /dev/sdd1 /run/media/chema/Music ntfs-3g uid=chema gid=users 0 0
 
 
-# test mpdsonglisten script
+test mpdsonglisten script
 
 `start-stop-daemon -c root:root -b --start --quiet --exec /usr/local/bin/mpdsonglisten localhost 6600 /usr/local/bin/mpc_play /usr/local/bin/mpc_stop`
 
