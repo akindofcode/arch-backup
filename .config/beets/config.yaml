@@ -1,8 +1,8 @@
 #directory: ~/Music
 #library: ~/.beets/musiclibrary.blb
 
-directory: /run/media/chema/Music/Music
-library: /run/media/chema/Music/Music/musiclibrary.blb
+directory: /run/media/chema/Music/
+library: /run/media/chema/Music/musiclibrary.blb
 
 import:
   move: no
@@ -11,7 +11,7 @@ import:
 plugins: discogs copyartifacts fetchart lastgenre mpdupdate
 
 paths:
-  default: %upper{$albumartist}/$albumartist [$year] $album {${label}%ifdef{catalognum, - }$catalognum$}/$track - $title
+  default: %upper{$format}/%upper{$albumartist}/$albumartist [$year] $album {${label}%ifdef{catalognum, - }$catalognum$}/$track - $title
 #  ext:log: $albumpath/$albumartist - $album
 #  ext:cue: $albumpath/$albumartist - $album
 #  ext:m3u: $albumpath/$albumartist - $album
@@ -22,3 +22,9 @@ copyartifacts:
 mpd:
   host: localhost
   port: 6600
+
+format_item: $artist - $album [$year] - $title
+format_album: $albumartist - $album [$year]
+sort_item: artist+ year+ album+ disc+ track+
+sort_album: albumartist+ year+ album+
+original_date: yes 
