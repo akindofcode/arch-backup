@@ -45,6 +45,10 @@ cp .config/nitrogen/* ~/.config/nitrogen/
 mkdir -p ~/.config/termite
 cp .config/termite/* ~/.config/termite/
 
+#copy termite configuration
+mkdir -p ~/.config/ranger
+cp .config/ranger/* ~/.config/ranger/
+
 #copy pipelines to /usr/bin
 sudo cp .bin/al-* /usr/bin/
 sudo chown root:root /usr/bin/al-*
