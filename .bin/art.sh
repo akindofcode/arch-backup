@@ -2,7 +2,7 @@
 
 #put this file to ~/.ncmpcpp/
 
-MUSIC_DIR=/run/media/chema/Music/Music #path to your music dir
+MUSIC_DIR=/run/media/chema/Music #path to your music dir
 
 COVER=/tmp/cover.jpg
 
