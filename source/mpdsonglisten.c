@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
                         break;
                 }
  
-                prev_state = play_state;
+                // prev_state = play_state;
             }
         }
     }
