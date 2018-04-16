@@ -89,7 +89,7 @@ int main(int argc, char const *argv[])
                         }
                         break;
                     case MPD_STATE_UNKNOWN:
-                    case MPD_STATE_PAUSE:
+                    // case MPD_STATE_PAUSE:
                     case MPD_STATE_STOP:
                         previous_sond_id = -1;
                         if (argc > 4)
