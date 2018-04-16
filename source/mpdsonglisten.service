@@ -1,0 +1,9 @@
+[Unit]
+Description=mpdsonglisten
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mpdsonglisten localhost 6600 art killart
+
+[Install]
+WantedBy=multi-user.target
