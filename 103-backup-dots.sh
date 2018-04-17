@@ -1,9 +1,10 @@
  #!/bin/bash
 
-cp -r ~/.config ~/Projects/arch-install/
-cp ~/.Xresources ~/Projects/arch-install/
-cp ~/.zshrc ~/Projects/arch-install/
-cp -r ~/.toys ~/Projects/arch-install/
-cp -r ~/.bin ~/Projects/arch-install/
+mkdir -p ~/Projects/arch-install/dot-backup
+cp -r ~/.config ~/Projects/arch-install/dot-backup
+cp ~/.Xresources ~/Projects/arch-install/dot-backup
+cp ~/.zshrc ~/Projects/arch-install/dot-backup
+cp -r ~/.toys ~/Projects/arch-install/dot-backup
+cp -r ~/.bin ~/Projects/arch-install/dot-backup
 
 echo "### dots backup done ###"
