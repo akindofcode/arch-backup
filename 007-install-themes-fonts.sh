@@ -1,6 +1,15 @@
 #!/bin/bash
 set -e
 
+# oh-my-zsh theme
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+sudo pacman -S --noconfirm --needed powerline-fonts 
+
+# To change the theme, go to the hidden file ~/.zshrc
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+
 # arc theme
 packer -S --noconfirm --noedit arc-gtk-theme 
 
