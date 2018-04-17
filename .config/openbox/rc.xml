@@ -586,6 +586,31 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows"/>
     </keybind>
+    <keybind key="XF86Mail">
+      <action name="Execute">
+        <command>vivaldi-stable https://www.google.com/inbox/</command>
+      </action>
+    </keybind>
+	<keybind key="XF86Search">
+      <action name="Execute">
+        <command>rofi -modi ssh,window,drun,run -show drun</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer set Master toggle</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set Master 10%-</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set Master 10%+</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioStop">
       <action name="Execute">
         <command>mpc stop</command>
