@@ -49,23 +49,20 @@ cp .config/termite/* ~/.config/termite/
 mkdir -p ~/.config/ranger
 cp .config/ranger/* ~/.config/ranger/
 
-#copy pipelines to /usr/bin
-sudo cp .bin/al-* /usr/bin/
-sudo chown root:root /usr/bin/al-*
-
-#move al-include.cfg to /usr/lib/archlabs/common
-sudo mkdir -p /usr/lib/archlabs/common
-sudo mv /usr/bin/al-include.cfg /usr/lib/archlabs/common/
-
-#copy local pipelines (can be edited)
+#copy pipelines and scripts to ~/.bin
 mkdir -p ~/.bin
-cp /usr/bin/al-* ~/.bin/
+sudo cp .bin/* ~/.bin/
+
+#copy al-include.cfg to /usr/lib/archlabs/common
+sudo mkdir -p /usr/lib/archlabs/common
+sudo cp .bin/al-include.cfg /usr/lib/archlabs/common/
+sudo chown root:root /usr/bin/al-include.cfg
 
 #copy toys
 mkdir -p ~/.toys
 cp .toys/* ~/.toys/
 
-# mpdsonglisten daemon for covers
+# mpdsonglisten service
 mkdir -p /.config/systemd/user/
 cp .config/systemd/user/mpdsonglisten.service ~/.config/systemd/user/
 systemctl --user enable mpdsonglisten
