@@ -21,5 +21,9 @@ sudo pacman -S --noconfirm --needed ntp
 sudo ntpd -qg
 hwclock --systohc
 
+# install intel microcode
+sudo pacman -S --noconfirm --needed intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 echo "use nmtui to configure wifi connection"
 echo "Please restart to apply changes"

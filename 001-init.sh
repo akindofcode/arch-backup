@@ -27,4 +27,8 @@ sudo pacman -S --noconfirm --needed ntp
 sudo ntpd -qg
 hwclock --systohc
 
+# install intel microcode
+sudo pacman -S --noconfirm --needed intel-ucode
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 echo "Please restart to apply changes"
