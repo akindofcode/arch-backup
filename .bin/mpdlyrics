@@ -53,3 +53,5 @@ file="$MPD_LIBRARY"/$(mpc_query %file%)
 lyrics=$(get_lyrics "$file" "$artist" "$title")
 
 printf "%s - %s\n%s\n" "$artist" "$title" "$lyrics"
+
+read -n1 -r -p ''
