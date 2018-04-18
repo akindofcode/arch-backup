@@ -3,7 +3,7 @@
 
 set -e
 
-: ${MPD_LIBRARY="$HOME/Music"}
+: ${MPD_LIBRARY="/run/media/chema/Music"}
 
 mpc_query() {
 	mpc -f "$1" current
@@ -35,12 +35,12 @@ get_lyrics() {
 
 	lyrics=$(id3_lyrics "$file")
 	if [ -z "$lyrics" ]; then
-		lyrics=$(fetch_lyrics "$artist" "$title")
+#		lyrics=$(fetch_lyrics "$artist" "$title")
 		lyrics=$(echo "$lyrics" | grep -v "Sorry, We don't have lyrics for this song yet.")
 
-		if [ -n "$lyrics" ]; then
-			save_id3_lyrics "$file" "$lyrics"
-		fi
+#		if [ -n "$lyrics" ]; then
+#			save_id3_lyrics "$file" "$lyrics"
+#		fi
 	fi
 
 	echo "$lyrics"
