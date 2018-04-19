@@ -1081,8 +1081,10 @@
       <decor>no</decor>
       <shade>no</shade>
       <position force="yes">
-        <x>10</x>
-        <y>10</y>
+        <!--<x>10</x>
+        <y>10</y>-->
+        <x>-10</x>
+        <y>120</y>
         <monitor>1</monitor>
       </position>
       <focus>no</focus>
@@ -1098,13 +1100,13 @@
       <decor>no</decor>
       <shade>no</shade>
       <position force="yes">
-        <x>700</x>
-        <y>10</y>
+        <x>-10</x>
+        <y>430</y>
         <monitor>1</monitor>
       </position>
        <size>
-        <width>520</width>
-        <height>800</height>
+        <width>300</width>
+        <height>600</height>
       </size>
       <focus>no</focus>
       <desktop>1</desktop>
