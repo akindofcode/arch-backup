@@ -92,7 +92,11 @@ install fonts to
 
 ### Music
 
-Beets
+Beets configured
+
+play [query] to create playlist and play
+W-c  -> cava
+W-l  -> show lyrics to current song
 
 Plugins: 
 
