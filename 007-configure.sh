@@ -1,70 +1,81 @@
 #!/bin/bash
 
-#copy openbox configuration
-mkdir -p ~/.config/openbox
-mkdir -p ~/.config/obmenu-generator
-cp .config/openbox/* ~/.config/openbox/
-cp .config/obmenu-generator/* ~/.config/obmenu-generator/
-
-#copy oblogout configuration 
-mkdir -p /.config/oblogout
-cp .config/oblogout/* /.config/oblogout/
-
-#copy compton configuration
-mkdir -p ~/.config/compton
-cp .config/compton/* ~/.config/compton/
-
-#copy tint2 configuration
-mkdir -p ~/.config/tint2
-cp .config/tint2/* ~/.config/tint2/
-
-#copy pcmanfm configuration
-mkdir -p ~/.config/pcmanfm/default
-cp .config/pcmanfm/default/* ~/.config/pcmanfm/default/
-
-#copy neofetch configuration
-mkdir -p ~/.config/neofetch
-cp ./config/neofetch/* ~/.config/neofetch/
-
-# copy .profile
-
 # copy .Xresources
 cp .Xresources ~/
 
 # copy .zshrc
 cp .zshrc ~/
 
-#copy nitrogen configuration
-mkdir -p ~/wallpapers
-cp wallpapers/* ~/wallpapers/
-
-mkdir -p ~/.config/nitrogen
-cp .config/nitrogen/* ~/.config/nitrogen/
-
-#copy termite configuration
-mkdir -p ~/.config/termite
-cp .config/termite/* ~/.config/termite/
-
-#copy termite configuration
-mkdir -p ~/.config/ranger
-cp .config/ranger/* ~/.config/ranger/
-
 #copy pipelines and scripts to ~/.bin
 mkdir -p ~/.bin
 sudo cp .bin/* ~/.bin/
+
+#copy toys
+mkdir -p ~/.toys
+cp .toys/* ~/.toys/
 
 #copy al-include.cfg to /usr/lib/archlabs/common
 sudo mkdir -p /usr/lib/archlabs/common
 sudo cp .bin/al-include.cfg /usr/lib/archlabs/common/
 sudo chown root:root /usr/bin/al-include.cfg
 
-#copy toys
-mkdir -p ~/.toys
-cp .toys/* ~/.toys/
+#copy wallpapers
+mkdir -p ~/wallpapers
+cp wallpapers/* ~/wallpapers/
+
+# copy .ncmpcpp
+mkdir -p ~/.ncmpcpp
+cp .ncmpcpp ~/.ncmpcpp/
+
+#copy .config
+mkdir -p ~/.config
+cp -r .config  ~/.config
+
+#copy openbox configuration
+#mkdir -p ~/.config/openbox
+#mkdir -p ~/.config/obmenu-generator
+#cp .config/openbox/* ~/.config/openbox/
+#cp .config/obmenu-generator/* ~/.config/obmenu-generator/
+
+#copy oblogout configuration 
+#mkdir -p /.config/oblogout
+#cp .config/oblogout/* /.config/oblogout/
+
+#copy compton configuration
+#mkdir -p ~/.config/compton
+#cp .config/compton/* ~/.config/compton/
+
+#copy tint2 configuration
+#mkdir -p ~/.config/tint2
+#cp .config/tint2/* ~/.config/tint2/
+
+#copy pcmanfm configuration
+#mkdir -p ~/.config/pcmanfm/default
+#cp .config/pcmanfm/default/* ~/.config/pcmanfm/default/
+
+#copy neofetch configuration
+#mkdir -p ~/.config/neofetch
+#cp ./config/neofetch/* ~/.config/neofetch/
+
+# copy .profile
+
+#copy nitrogen configuration
+#mkdir -p ~/.config/nitrogen
+#cp .config/nitrogen/* ~/.config/nitrogen/
+
+#copy termite configuration
+#mkdir -p ~/.config/termite
+#cp .config/termite/* ~/.config/termite/
+
+#copy ranger configuration
+#mkdir -p ~/.config/ranger
+#cp .config/ranger/* ~/.config/ranger/
 
 # mpdsonglisten service
-mkdir -p /.config/systemd/user/
-cp .config/systemd/user/mpdsonglisten.service ~/.config/systemd/user/
+#mkdir -p /.config/systemd/user/
+#cp .config/systemd/user/mpdsonglisten.service ~/.config/systemd/user/
+
+# enable mpdsonglisten user service
 systemctl --user enable mpdsonglisten
 systemctl --user start mpdsonglisten
 
