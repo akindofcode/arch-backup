@@ -17,17 +17,23 @@ sudo pip install discogs-client
 
 sudo pip install pylast
 
+sudo pip install requests
+
 #sudo pip install beets-copyartifacts
 # if copyartifacts doesn't work
 # replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
 # with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
 
+# we need kid3 (pacman) o kid3-cli (aur) for reading lyrics from id3 tags (mpdlyrics script)
+#packer -S --noedit --noconfirm kid3-cli
+sudo pacman -S --needed --noconfirm kid3
+
 
 installto=$HOME/.config/mpd
 username=$(whoami)
 interface=$(ip route show | awk '{print $NF}' | tail -1)
-echo "What is the full path of the directory containing your music?"
-read -e -p "> " music_dir
+#echo "What is the full path of the directory containing your music?"
+#read -e -p "> " music_dir
 
 if test -n "$(pgrep pulseaudio)";
   then
@@ -65,22 +71,22 @@ if test x$DO_CONFIG = xyes;
 	mkdir -p $installto/playlists
     touch $installto/log
 	cat > $installto/mpd.conf <<EOF
-music_directory                  "$music_dir"
-db_file                          "$installto/database"
-log_file                         "$installto/log"
-pid_file                         "$installto/pid"
-state_file                       "$installto/state"
-playlist_directory               "$installto/playlists"
+music_directory                  "/run/media/chema/Music/"
+db_file                          "/home/chema/.config/mpd/database"
+log_file                         "/home/chema/.config/mpd/log"
+pid_file                         "/home/chema/.config/mpd/pid"
+state_file                       "/home/chema/.config/mpd/state"
+playlist_directory               "/home/chema/.config/mpd/playlists"
 log_level                        "default"
 #password                        "password@read,add,control,admin"
 #default_permissions             "read,add,control,admin"
-#user                            "$username"
-#bind_to_address                 "$interface"
+#user                            "chema"
+#bind_to_address                 "202"
 bind_to_address                  "localhost"
-#bind_to_address                 "$installto/socket"
-#port                            "6600"
+#bind_to_address                  "/home/chema/.config/mpd/socket"
+#port                             "6600"
 gapless_mp3_playback             "yes"
-auto_update                      "yes"
+auto_update                      "no"
 #auto_update_depth               "3"
 
 input {
@@ -89,23 +95,37 @@ input {
         proxy_user               "user"
         proxy_password           "password"
 }
-$AUDIO
-#audio_output {
-#               type             "alsa"
-#               name             "Alsa output"
-#               device           "hw:0,0"
-#               format           "44100:16:2"
-#               mixer_type       "hardware"
-#               mixer_device     "default"
-#               mixer_control    "PCM"
-#               mixer_index      "0"
-#}
+
+audio_output {
+               type             "alsa"
+               name             "Alsa output"
+               device           "hw:0,0"
+               format           "44100:16:2"
+               mixer_type       "software"
+               mixer_device     "default"
+               mixer_control    "PCM"
+               mixer_index      "0"
+}
+
+audio_output {
+               type              "pulse"
+               name              "Pulseaudio"
+}
+
+audio_output {
+  type      "fifo"
+  name      "mpd_fifo"
+  path      "/tmp/mpd.fifo"
+  format      "44100:16:2"
+}
+
+
 #audio_output {
 #               type             "httpd"
 #               name             "Internet Stream"
 #               encoder          "lame"
 #               port             "8000"
-#               bind_to_address  "$interface"
+#               bind_to_address  "202"
 #               quality          "5.0"
 #               bitrate          "128"
 #               format           "44100:16:1"
@@ -122,10 +142,10 @@ $AUDIO
 #               format           "44100:16:1"
 #}
 
-#replaygain                      "album"
-#replaygain_preamp               "0"
+#replaygain                       "album"
+#replaygain_preamp                "0"
 #volume_normalization            "no"
-#audio_buffer_size               "2048"
+audio_buffer_size               "2048"
 #buffer_before_play              "10%"
 #connection_timeout              "60"
 #max_connections                 "10"
@@ -134,6 +154,13 @@ $AUDIO
 #max_output_buffer_size          "8192"
 #filesystem_charset              "UTF-8"
 #id3v1_encoding                  "ISO-8859-1"
+
+decoder { 
+        plugin "ffmpeg" 
+        enabled "no" 
+} 
+
+filesystem_charset "UTF-8"
 EOF
 	clear
 	cat <<EOF
