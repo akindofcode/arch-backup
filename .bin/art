@@ -30,11 +30,14 @@ function reset_background
            #printf "\e]20;${COVER};70x70+0+00:op=keep-aspect\a"
            # pkill feh
            pkill -f ${COVER}
-           feh ${COVER}
+           feh ${COVER} &
         else
             reset_background
         fi
     else
         reset_background
     fi
+    pkill -f 'termite -e mpdlyrics'
+    termite -e mpdlyrics &
+
 } &

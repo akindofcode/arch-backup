@@ -1108,7 +1108,7 @@
       </size>
       <focus>no</focus>
       <desktop>1</desktop>
-      <layer>normal</layer>
+      <layer>below</layer>
       <iconic>no</iconic>
       <skip_pager>no</skip_pager>
       <skip_taskbar>yes</skip_taskbar>
