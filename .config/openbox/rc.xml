@@ -411,7 +411,7 @@
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>termite -e mpdlyrics --geometry=600x800 </command>
+        <command>termite -e mpdlyrics -c /home/chema/.config/termite/config-lyrics</command>
       </action>
     </keybind>
     <keybind key="W-a">
@@ -1102,6 +1102,10 @@
         <y>10</y>
         <monitor>1</monitor>
       </position>
+       <size>
+        <width>600</width>
+        <height>800</height>
+      </size>
       <focus>no</focus>
       <desktop>1</desktop>
       <layer>normal</layer>
