@@ -1,0 +1,39 @@
+sw_volume: 100
+audio_device_state:1:Alsa output
+audio_device_state:0:Pulseaudio
+audio_device_state:1:mpd_fifo
+state: play
+current: 0
+time: 3.877000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/01 - Little Arrow.flac
+1:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/02 - Masterpiece.flac
+2:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/03 - Vegas.flac
+3:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/04 - Real Love.flac
+4:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/05 - Interstate.flac
+5:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/06 - Lorraine.flac
+6:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/07 - Paul.flac
+7:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/08 - Humans.flac
+8:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/09 - Velvet Ring.flac
+9:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/10 - Animals.flac
+10:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/11 - Randy.flac
+11:FLAC/BIG THIEF/Big Thief [2016] Masterpiece {Saddle Creek Records}/12 - Parallels.flac
+12:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/01 - Pretty Things.flac
+13:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/02 - Shark Smile.flac
+14:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/03 - Capacity.flac
+15:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/04 - Watering.flac
+16:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/05 - Coma.flac
+17:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/06 - Great White Shark.flac
+18:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/07 - Mythological Beauty.flac
+19:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/08 - Objects.flac
+20:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/09 - Haley.flac
+21:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/10 - Mary.flac
+22:FLAC/BIG THIEF/Big Thief [2017] Capacity {Saddle Creek Records - LBJ-255}/11 - Black Diamonds.flac
+playlist_end

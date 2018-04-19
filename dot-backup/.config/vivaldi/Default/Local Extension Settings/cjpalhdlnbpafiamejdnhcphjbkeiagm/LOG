@@ -1,0 +1,17 @@
+2018/04/19-15:27:07.858 3642 Reusing MANIFEST /home/chema/.config/vivaldi/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2018/04/19-15:27:07.858 3642 Recovering log #28
+2018/04/19-15:27:07.949 3642 Reusing old log /home/chema/.config/vivaldi/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000028.log 
+2018/04/19-15:34:11.556 5136 Level-0 table #32: started
+2018/04/19-15:34:11.696 5136 Level-0 table #32: 2513450 bytes OK
+2018/04/19-15:34:11.752 5136 Delete type=0 #28
+2018/04/19-15:34:11.756 5136 Compacting 4@0 + 2@1 files
+2018/04/19-15:34:11.906 5136 Generated table #33@0: 14 keys, 2202979 bytes
+2018/04/19-15:34:12.094 5136 Generated table #34@0: 15 keys, 4151755 bytes
+2018/04/19-15:34:12.095 5136 Compacted 4@0 + 2@1 files => 6354734 bytes
+2018/04/19-15:34:12.138 5136 compacted to: files[ 0 2 1 0 0 0 0 ]
+2018/04/19-15:34:12.138 5136 Delete type=2 #29
+2018/04/19-15:34:12.164 5136 Delete type=2 #26
+2018/04/19-15:34:12.165 5136 Delete type=2 #32
+2018/04/19-15:34:12.166 5136 Delete type=2 #20
+2018/04/19-15:34:12.177 5136 Delete type=2 #24
+2018/04/19-15:34:12.191 5136 Delete type=2 #21

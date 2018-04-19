@@ -1,0 +1,97 @@
+2018-04-16	rc.xml KEYBINDS
+-------------------------------
+
+ 0	C-S-BackSpace  			openbox --reconfigure
+ 1	W-KP_1        				UnmaximizeFull
+ 2	W-KP_2        				UnmaximizeFull
+ 3	W-KP_3        				UnmaximizeFull
+ 4	W-KP_4        				UnmaximizeFull
+ 5	W-KP_5        				MaximizeFull
+ 6	W-KP_6        				UnmaximizeFull
+ 7	W-KP_7        				UnmaximizeFull
+ 8	W-KP_8        				UnmaximizeFull
+ 9	W-KP_9        				UnmaximizeFull
+10	C-A-Left      				DesktopLeft
+11	C-A-Right     				DesktopRight
+12	C-A-Up        				Desktop
+13	C-A-Down      				Desktop
+14	W-1           				Desktop
+15	W-2           				Desktop
+16	W-3           				Desktop
+17	W-4           				Desktop
+18	S-A-1         				SendToDesktop
+19	S-A-2         				SendToDesktop
+20	S-A-3         				SendToDesktop
+21	S-A-4         				SendToDesktop
+22	A-Escape      				Lower
+23	A-space       				client-menu
+24	A-F2          				gmrun
+25	A-F3          				xfce4-appfinder
+26	W-S-d         				dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -.....
+27	A-F4          				Close
+28	A-F5          				Iconify
+29	A-F6          				ToggleMaximize
+30	A-F8          				ToggleDecorations
+31	W-d           				ToggleShowDesktop
+32	W-b           				ToggleDecorations
+33	W-f           				pcmanfm
+34	S-W-Return     			pcmanfm
+35	W-t           				termite
+36	W-Return      				termite
+37	W-w           				vivaldi-stable
+38	W-l           				lock.sh
+39	W-r           				rofi -modi ssh,window,drun,run -show drun
+40	C-A-r         				rofi-theme-selector -font "Noto Sans 10"
+41	W-e           				subl
+42	W-m           				termite -e ncmpcpp
+43	W-c           				termite -e cava
+44	W-a           				art.sh
+45	W-h           				termite -e htop
+46	W-v           				pavucontrol
+47	C-A-u         				pavucontrol
+48	W-x           				oblogout --config ~/.config/oblogout/oblogout.conf
+49	W-Pause       				oblogout --config ~/.config/oblogout/oblogout.conf
+50	W-Escape      				xkill
+51	W-Tab         				client-list-combined-menu
+52	C-space       				rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"
+53	C-Shift-space  			rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"
+54	W-F11         				rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"
+55	W-F12         				rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"
+56	W-space       				root-menu
+57	W-Right       				UnmaximizeFull
+58	W-Left        				UnmaximizeFull
+59	W-Up          				MaximizeFull
+60	W-Down        				UnmaximizeFull
+61	W-A-Left      				UnmaximizeFull
+62	W-A-Right     				UnmaximizeFull
+63	A-r           				Resize
+64	A-m           				Move
+65	S-W-q         				Close
+66	W-F1          				Desktop
+67	W-F2          				Desktop
+68	W-F3          				Desktop
+69	W-F4          				Desktop
+70	W-d           				ToggleShowDesktop
+71	A-F4          				Close
+72	A-Escape      				Lower
+73	A-space       				client-menu
+74	A-Tab         				NextWindow
+75	A-S-Tab       				PreviousWindow
+76	C-A-Tab       				NextWindow
+77	W-S-Right     				DirectionalCycleWindows
+78	W-S-Left      				DirectionalCycleWindows
+79	W-S-Up        				DirectionalCycleWindows
+80	W-S-Down      				DirectionalCycleWindows
+81	XF86AudioStop  			mpc stop
+82	XF86AudioPlay  			mpc toggle
+83	XF86AudioPrev  			mpc prev
+84	XF86AudioNext  			mpc next
+85	XF86MonBrightnessUp	xbacklight +10
+86	XF86MonBrightnessDown	xbacklight -10
+87	W-p           				mons -n left
+88	W-A-F1        				mons -o
+89	W-A-F2        				mons -s
+90	A-Right       				mons -o
+91	A-Left        				mons -s
+92	A-Up          				mons -e left
+93	A-Down        				mons -m
