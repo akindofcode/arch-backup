@@ -17,10 +17,16 @@ sudo pip install discogs-client
 
 sudo pip install pylast
 
+sudo pip install requests
+
 #sudo pip install beets-copyartifacts
 # if copyartifacts doesn't work
 # replace /usr/lib/python3.6/site-packages/beetsplug/copyartifacts.py
 # with https://raw.githubusercontent.com/sbarakat/beets-copyartifacts/master/beetsplug/copyartifacts.py
+
+# we need kid3 (pacman) o kid3-cli (aur) for reading lyrics from id3 tags (mpdlyrics script)
+#packer -S --noedit --noconfirm kid3-cli
+sudo pacman -S --needed --noconfirm kid3
 
 
 installto=$HOME/.config/mpd
