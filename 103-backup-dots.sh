@@ -7,4 +7,6 @@ cp ~/.zshrc dot-backup/
 cp -r ~/.toys dot-backup/
 cp -r ~/.bin dot-backup/
 
+rm -rf dot-backup/.config/vivaldi/
+
 echo "### dots backup done ###"
