@@ -15,3 +15,5 @@ echo "### pacman cache cleaned ###"
 packer -Syu --noconfirm --noedit --auronly
 
 echo "### aur packages updated ###"
+
+read -n1 -r -p ''
