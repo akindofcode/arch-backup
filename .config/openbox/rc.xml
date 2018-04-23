@@ -604,7 +604,7 @@
       <action name="ToggleDecorations"/>
     </keybind>
 
-    <keybind key="W-m">
+    <keybind key="W-n">
       <action name="Execute">
         <command>termite -e ncmpcpp</command>
       </action>
