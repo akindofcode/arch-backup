@@ -75,6 +75,7 @@ install fonts to
 ### i3block
 
 ### Polybar
+ziggy_st
 
 ### Silent boot
 
@@ -94,15 +95,21 @@ regenerate grub.cfg file:
 
 ### Hide Grub (not for dual boot)
 
-packer -S --noedit --noconfirm grub-silent 
+packer -S --noedit grub-silent 
 
-add to /etc/default/grub
-
+- Reinstall GRUB first:
+  
+`sudo grub-install --target=i386-pc /dev/sdf`
+ 
+- Then; look at "/etc/default/grub.silent" sample file
+  and make necessary changes to "/etc/default/grub".
+ 
 `GRUB_DEFAULT=0`
 `GRUB_TIMEOUT=0`
 `GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT`
+`GRUB_CMDLINE_LINUX_DEFAULT="nvidia-drm.modeset=1 quiet loglevel=3 vga=current rd.systemd.show_status=false vt.global_cursor_default=0 udev.log_priority=3"`
 
-regenerate grub.cfg file:
+- regenerate grub.cfg file:
 
 `# grub-mkconfig -o /boot/grub/grub.cfg`
 
