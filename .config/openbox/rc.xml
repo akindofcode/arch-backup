@@ -1184,12 +1184,14 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+
     <application class="oblogout">
       <position force="yes">
         <monitor>1</monitor>
       </position>
       <fullscreen>yes</fullscreen>
     </application>
+
     <application title="cava">
       <decor>no</decor>
       <shade>no</shade>
@@ -1211,6 +1213,7 @@
       <fullscreen>no</fullscreen>
       <maximized>no</maximized>
     </application>
+
     <application title="feh [1 of 1] - /tmp/cover.jpg">
       <decor>no</decor>
       <shade>no</shade>
@@ -1230,6 +1233,7 @@
       <fullscreen>no</fullscreen>
       <maximized>no</maximized>
     </application>
+
     <application title="mpdlyrics">
       <decor>no</decor>
       <shade>no</shade>
@@ -1250,6 +1254,12 @@
       <skip_taskbar>yes</skip_taskbar>
       <fullscreen>no</fullscreen>
       <maximized>no</maximized>
+    </application>
+
+    <application class="mpv">
+      <decor>no</decor>
+      <maximize>yes</maximize>
+      <layer>above</layer>
     </application>
     <!--
   # this is an example with comments through out. use these to make your
