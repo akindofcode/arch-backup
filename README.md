@@ -10,15 +10,13 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 `export LC_CTYPE=$LANG`
 
-### 001-init
+### nvidia
 
 Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline' (server display configuration - advanced)
 
 <http://www.thelinuxrain.com/articles/got-tearing-with-proprietary-nvidia-try-this>
 
 Disable second screen and save
-
-<https://github.com/Ventto/mons>
 
 ### xrandr
 
@@ -78,8 +76,6 @@ install fonts to
 
 ### Polybar
 
-### Microcode updates
-
 ### Silent boot
 
 remove fsck from HOOKS=(...) in /etc/mkinitpcio.conf
@@ -92,7 +88,21 @@ add to /etc/default/grub:
 
 `GRUB_CMDLINE_LINUX_DEFAULT="nvidia-drm.modeset=1 quiet vga=current vt.global_cursor_default=0 udev.log_priority=3"`
 
-reinstall grub:
+regenerate grub.cfg file:
+
+`# grub-mkconfig -o /boot/grub/grub.cfg`
+
+### Hide Grub (not for dual boot)
+
+packer -S --noedit --noconfirm grub-silent 
+
+add to /etc/default/grub
+
+`GRUB_DEFAULT=0`
+`GRUB_TIMEOUT=0`
+`GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT`
+
+regenerate grub.cfg file:
 
 `# grub-mkconfig -o /boot/grub/grub.cfg`
 
