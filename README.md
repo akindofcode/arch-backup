@@ -75,7 +75,6 @@ install fonts to
 ### i3block
 
 ### Polybar
-ziggy_st
 
 ### Silent boot
 
