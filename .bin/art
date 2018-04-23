@@ -38,7 +38,7 @@ function reset_background
         reset_background
     fi
     pkill -f 'termite -e mpdlyrics'
-    termite -e mpdlyrics &
+    termite -e mpdlyrics -c ~/.config/termite/config-lyrics &
     pkill -f 'termite -e cava'
     #if ! pgrep -x 'termite -e cava' > /dev/null
     #  then
