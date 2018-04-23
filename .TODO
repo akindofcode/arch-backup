@@ -1,37 +1,6 @@
-# scripts
-
-modify 008 cp .config ~/
-
 # openbox
 
 > fix window placement when toggling display
-
-> undecorate certain windows 
-~/.config/openbox/rc.xml
-<applications>
-#undecorate termite windows
-  <application class="Termite">
-    <decor>no</decor>
-    <maximize>yes</maximize>
-  </application>
-#undecorate and always on-top MPV windows
-  <application class="mpv">
-    <decor>no</decor>
-    <maximize>yes</maximize>
-    <layer>above</layer>
-  </application>
-</applications>
-
-> oblogout covers both monitors (not working)
-~/.config/openbox/rc.xml
-<applications>
-  <application class="oblogout">
-    <position force="yes">
-      <monitor>1</monitor>
-    </position>
-    <fullscreen>yes</fullscreen>
-  </application>
-</applications>
 
 # gtk2 / 3 icons - sardi-mono-numix-colora-variations-icons-git
 
@@ -79,16 +48,6 @@ papirus-icon-theme-git
 
 > test polybar
     https://github.com/rmw5601/dotfiles/tree/master/config/polybar
-
-> music 
-    mpd (autostart) ¿alsa?
-    ncmpcpp + mpc
-    cava
-    beets
-    popup toy
-    foobar2k in wine
-    art.sh (check when song is playing / change of song)
-
 
 > video
 
