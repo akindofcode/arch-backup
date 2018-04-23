@@ -82,6 +82,19 @@ install fonts to
 
 ### Silent boot
 
+edit /etc/mkinitpcio.conf
+
+remove fsck from HOOKS=(...)
+
+mkinitcpio -p linux
+
+GRUB -> e -> quiet vga=current vt.global_cursor_default=0 udev.log_priority=3
+
+add to /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet vga=current vt.global_cursor_default=0 udev.log_priority=3"
+GRUB_CMDLINE_LINUX_DEFAULT="nvidia-drm.modeset=1 quiet vga=current vt.global_cursor_default=0 udev.log_priority=3"
+grub-mkconfig -o /boot/grub/grub.cfg
+
 ### Maintenance
 
 `du /var/cache/pacman/pkg -sh`
