@@ -634,17 +634,17 @@
       </action>
     </keybind> -->
 
-    <keybind key="W-Tab">
+<!--    <keybind key="W-Tab">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
       </action>
-    </keybind>
+    </keybind>-->
 
-<!--     <keybind key="W-Tab">
+    <keybind key="W-Tab">
       <action name="Execute">
         <command>rofi -modi window -show window</command>
       </action>
-    </keybind> -->
+    </keybind> 
 
     <keybind key="W-Pause">
       <action name="Execute">
