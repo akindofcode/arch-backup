@@ -13,6 +13,8 @@ function reset_background
 
 {
     album="$(mpc --format %album% current)"
+    artist="$(mpc --format %artist% current)"
+    song="$(mpc --format %title% current)"
     file="$(mpc --format %file% current)"
     album_dir="${file%/*}"
     [[ -z "$album_dir" ]] && exit 1
@@ -44,4 +46,5 @@ function reset_background
     #  then
         termite -e cava &
     #fi
+    notify-send "Now playing: $artist - $song" &
 } &
