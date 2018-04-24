@@ -1,4 +1,5 @@
 [options]
+
 scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
@@ -7,7 +8,10 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Monospace 7
+#font = Monospace Bold 7
+#font = Hack Bold 6
+#font = Fira Mono 7
+font = Mononoki Bold 8
 search_wrap = true
 #icon_name = terminal
 #geometry = 640x400
@@ -38,7 +42,8 @@ filter_unmatched_urls = true
 #foreground      = ghost
 foreground      = #f8f8ff
 foreground_bold = #c5c8c6
-cursor          = #c5c8c6
+#cursor          = #c5c8c6
+cursor 			= rgba(64, 69, 82, 0)
 #background      = #1d1f21
 
 # 20% background transparency (requires a compositor)
@@ -94,5 +99,5 @@ color15 = #ffffff
 #active_background = #3f3f3f
 #padding = 2
 #border = #3f3f3f
-border_width = 0
+#border_width = 0
 #roundness = 2.0
