@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc mpv
+sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc mpv youtube-dl
 
 packer -S --noedit --noconfirm cava 
 
