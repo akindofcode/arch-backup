@@ -499,7 +499,7 @@
 
     <keybind key="W-o">
       <action name="ShowMenu">
-        <command>root-menu</command>
+        <menu>root-menu</menu>
       </action>
     </keybind>
 
