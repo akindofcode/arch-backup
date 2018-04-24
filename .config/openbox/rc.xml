@@ -612,7 +612,7 @@
 
     <keybind key="W-m">
       <action name="Execute">
-        <command>mpv</command>
+        <command>mpv --player-operation-mode=pseudo-gui</command>
       </action>
     </keybind>
 
@@ -1244,7 +1244,7 @@
       </position>
        <size>
         <width>300</width>
-        <height>600</height>
+        <height>613</height>
       </size>
       <focus>no</focus>
       <desktop>1</desktop>
