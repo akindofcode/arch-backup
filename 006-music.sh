@@ -3,7 +3,7 @@ clear
 
 sudo pacman -S --needed --noconfirm mpd ncmpcpp mpc mpv youtube-dl
 
-packer -S --noedit --noconfirm cava 
+packer -S --noedit --noconfirm cava pulsemixer
 
 # install beets
 
