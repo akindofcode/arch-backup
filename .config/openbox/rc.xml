@@ -596,7 +596,7 @@
     <keybind key="W-v">
       <action name="Execute">
         <!-- <command>pavucontrol</command> -->
-        <command>vivaldi-stable</command>
+        <command>termite -e pulsemixer</command>
       </action>
     </keybind>
 
