@@ -443,6 +443,7 @@
     </keybind>
   <!-- Window keybindings -->    
 
+  <!-- Programs keybindings -->
     <keybind key="W-q">
       <action name="Execute">
         <command>qbittorrent</command>
@@ -463,15 +464,10 @@
 
     <keybind key="W-r">
       <action name="Execute">
+      	<!--<command>rofi -modi ssh,window,drun,run -show drun</command>-->
         <command>termite -e ranger</command>
       </action>
     </keybind>
-
-<!--     <keybind key="W-r">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun</command>
-      </action>
-    </keybind> -->
 
     <keybind key="W-t">
       <action name="Execute">
@@ -559,15 +555,10 @@
 
     <keybind key="W-l">
       <action name="Execute">
+      	<!-- <command>lock.sh</command> -->
         <command>termite -e mpdlyrics -c /home/chema/.config/termite/config-lyrics</command>
       </action>
     </keybind>
-
-<!--    <keybind key="W-l">
-      <action name="Execute">
-        <command>lock.sh</command>
-      </action>
-    </keybind> -->
 
     <keybind key="W-ñ">
       <action name="Execute">
@@ -658,6 +649,8 @@
       </action>
     </keybind>
 
+	<!-- Programs keybindings -->
+
     <keybind key="C-space">
       <action name="Execute">
         <command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command>
@@ -669,11 +662,13 @@
         <command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command>
       </action>
     </keybind>
+    
     <keybind key="W-F11">
       <action name="Execute">
         <command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command>
       </action>
     </keybind>
+
     <keybind key="W-F12">
       <action name="Execute">
         <command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command>
