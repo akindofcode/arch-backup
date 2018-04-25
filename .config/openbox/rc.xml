@@ -813,7 +813,7 @@
     </keybind>
     <keybind key="XF86Mail">
       <action name="Execute">
-        <command>vivaldi-stable https://www.google.com/inbox/</command>
+        <command>vivaldi-stable https://inbox.google.com/</command>
       </action>
     </keybind>
     <keybind key="XF86Search">
