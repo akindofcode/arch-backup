@@ -11,10 +11,10 @@ cp $1 ~/.config/mpd/playlists/current.m3u
 
 rm $1
 
-mpc stop
+mpc stop --quiet
 
-mpc clear
+mpc clear --quiet
 
 mpc load --quiet current
 
-mpc play 1
+mpc play 1 
