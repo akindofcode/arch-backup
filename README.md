@@ -10,6 +10,10 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 `export LC_CTYPE=$LANG`
 
+### Fonts
+
+Place windows fonts in /fonts/WindowsFonts before script 005
+
 ### nvidia
 
 Fix screen tearing: in nvidia-settings 'Force Coposition Pipeline' (server display configuration - advanced)
