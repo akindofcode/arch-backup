@@ -28,7 +28,6 @@ mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 curl -fLo "Shure Tech Mono Nerd Font.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/ShareTechMono/complete/Shure%20Tech%20Mono%20Nerd%20Font%20Complete.ttf
-fc-cache -fv
 
 #install windows fonts
 sudo cp -r fonts/WindowsFonts /usr/share/fonts/
@@ -36,3 +35,6 @@ sudo chmod 755 /usr/share/fonts/WindowsFonts/*
 
 #to make full use of the MS fonts it is necessary to create a rule mapping those generic names to MS specific fonts
 sudo cp init/99-user.conf /etc/fonts/conf.d/
+
+#regenerate the fontconfig cache:
+fc-cache -fv
