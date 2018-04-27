@@ -56,11 +56,9 @@ Just add
 
 ### Fonts
 
-Place windows fonts in /fonts/WindowsFonts before script 005
+Place windows fonts in /fonts/WindowsFonts before running script 005. Check vivaldi fonts.
 
-install fonts to
-
-/.local/share/fonts or /usr/share/fonts
+New fonts cabn be installed to /.local/share/fonts or /usr/share/fonts
 
 `fc-cache -fv`
 
@@ -72,11 +70,14 @@ install fonts to
 
 <https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2>
 
-### Zsh
+
+### Polybar
+
+### Lemonbar
 
 ### i3block
 
-### Polybar
+### Zsh
 
 ### Silent boot
 
