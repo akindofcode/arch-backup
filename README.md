@@ -6,6 +6,18 @@ Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
+### Locale and keymap
+
+uncomment line "en_GB.UTF-8" from /etc/locale.gen
+
+`sudo locale-gen`
+
+`sudo echo LANG=en_GB.UTF-8 > /etc/locale.conf`
+
+`sudo localectl set-keymap es`
+
+`sudo localetcl set-x11-keymap es`
+
 ### fix locale
 
 `export LC_CTYPE=$LANG`
