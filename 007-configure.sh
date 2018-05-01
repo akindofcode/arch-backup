@@ -89,6 +89,7 @@ systemctl --user start rtorrent
 
 mkdir -p ~/.local/share/applications/
 cp .local/share/applications/rtorrent-magnet.desktop ~/.local/share/applications/
+xdg-mime default rtorrent-magnet.desktop x-scheme-handler/magnet
 
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
