@@ -18,19 +18,23 @@ execute.throw = bash, -c, (cat,\
     "&& mkdir -p .session download log watch/{load,start}")
 
 # Listening port for incoming peer traffic (fixed; you can also randomize it)
-network.port_range.set = 50000-50000
+network.port_range.set = 64550-64550
 network.port_random.set = no
 
 # Tracker-less torrent and UDP tracker support
 # (conservative settings for 'private' trackers, change for 'public')
-## dht.mode.set = disable
-dht.mode.set = on
+dht.mode.set = auto
 protocol.pex.set = no
-trackers.use_udp.set = no
+trackers.use_udp.set = yes
+## trackers.use_udp.set = no
 
 # Peer settings
-throttle.max_uploads.set = 100
-throttle.max_uploads.global.set = 250
+throttle.max_uploads.set = 5
+throttle.max_uploads.global.set = 10
+
+# Upload/download rate in KB/s. 0 for unlimited
+throttle.global_down.max_rate.set_kb = 0
+throttle.global_up.max_rate.set_kb = 50
 
 throttle.min_peers.normal.set = 20
 throttle.max_peers.normal.set = 60
@@ -38,7 +42,8 @@ throttle.min_peers.seed.set = 30
 throttle.max_peers.seed.set = 80
 trackers.numwant.set = 80
 
-protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
+## protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
+protocol.encryption.set = require,require_RC4
 
 # Limits for file handle resources, this is optimized for
 # an `ulimit` of 1024 (a common default). You MUST leave
