@@ -79,6 +79,14 @@ cp -r .config  ~/.config
 systemctl --user enable mpdsonglisten
 systemctl --user start mpdsonglisten
 
+# install and enable rtorrent
+sudo pacman -S --noconfirm --needed screen rtorrent
+
+cp .rtorrent.rc ~/
+
+systemctl --user enable rtorrent
+systemctl --user start rtorrent
+
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
 sudo cp -R vivaldi/arc /opt/vivaldi/resources/vivaldi/style
