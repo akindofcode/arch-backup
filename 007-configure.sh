@@ -94,5 +94,6 @@ sudo cp vivaldi/browser.html /opt/vivaldi/resources/vivaldi/
 
 echo "!!! You need to modify the Vivaldi Theme by hand !!!"
 echo "Check values at https://github.com/Tiamarth/Arc-for-Vivaldi"
+echo "Add arc.css to browser.html"
 
 echo "Reconfigure openbox and generate new menu"
