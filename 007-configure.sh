@@ -87,6 +87,9 @@ cp .rtorrent.rc ~/
 systemctl --user enable rtorrent
 systemctl --user start rtorrent
 
+mkdir -p ~/.local/share/applications/
+cp .local/share/applications/rtorrent-magnet.desktop ~/.local/share/applications/
+
 #copy vivaldi conf - check for updates at https://github.com/Tiamarth/Arc-for-Vivaldi
 sudo cp vivaldi/*.css /opt/vivaldi/resources/vivaldi/style
 sudo cp -R vivaldi/arc /opt/vivaldi/resources/vivaldi/style
