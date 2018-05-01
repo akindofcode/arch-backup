@@ -446,7 +446,7 @@
   <!-- Programs keybindings -->
     <keybind key="W-q">
       <action name="Execute">
-        <command>qbittorrent</command>
+        <command>termite -e 'screen -D -r rtorrent'</command>
       </action>
     </keybind>
 
@@ -464,7 +464,6 @@
 
     <keybind key="W-r">
       <action name="Execute">
-      	<!--<command>rofi -modi ssh,window,drun,run -show drun</command>-->
         <command>termite -e ranger</command>
       </action>
     </keybind>
@@ -1239,7 +1238,7 @@
       </position>
        <size>
         <width>300</width>
-        <height>613</height>
+        <height>612</height>
       </size>
       <focus>no</focus>
       <desktop>1</desktop>
@@ -1247,6 +1246,28 @@
       <iconic>no</iconic>
       <skip_pager>no</skip_pager>
       <skip_taskbar>yes</skip_taskbar>
+      <fullscreen>no</fullscreen>
+      <maximized>no</maximized>
+    </application>
+
+    <application name="vivaldi-stable">
+      <decor>no</decor>
+      <shade>no</shade>
+      <position force="yes">
+        <x>10</x>
+        <y>10</y>
+        <monitor>1</monitor>
+      </position>
+       <size>
+        <width>1590</width>
+        <height>1033</height>
+      </size>
+      <focus>no</focus>
+      <desktop>1</desktop>
+      <layer>normal</layer>
+      <iconic>no</iconic>
+      <skip_pager>no</skip_pager>
+      <skip_taskbar>no</skip_taskbar>
       <fullscreen>no</fullscreen>
       <maximized>no</maximized>
     </application>
