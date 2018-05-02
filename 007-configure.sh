@@ -73,6 +73,8 @@ cp -r .config  ~/
 #mkdir -p /.config/systemd/user/
 #cp .config/systemd/user/mpdsonglisten.service ~/.config/systemd/user/
 
+sudo cp .bin/mpdsonglisten /usr/bin/
+
 # enable mpdsonglisten user service
 systemctl --user enable mpdsonglisten
 systemctl --user start mpdsonglisten
