@@ -8,7 +8,7 @@ cp .zshrc ~/
 
 #copy pipelines and scripts to ~/.bin
 mkdir -p ~/.bin
-sudo cp .bin/* ~/.bin/
+cp .bin/* ~/.bin/
 
 #copy toys
 mkdir -p ~/.toys
@@ -17,19 +17,17 @@ cp .toys/* ~/.toys/
 #copy al-include.cfg to /usr/lib/archlabs/common
 sudo mkdir -p /usr/lib/archlabs/common
 sudo cp .bin/al-include.cfg /usr/lib/archlabs/common/
-sudo chown root:root /usr/bin/al-include.cfg
+sudo chown root:root /usr/lib/archlabs/common/al-include.cfg
 
 #copy wallpapers
 mkdir -p ~/wallpapers
 cp wallpapers/* ~/wallpapers/
 
 # copy .ncmpcpp
-mkdir -p ~/.ncmpcpp
-cp .ncmpcpp ~/.ncmpcpp/
+cp -r .ncmpcpp ~/
 
 #copy .config
-mkdir -p ~/.config
-cp -r .config  ~/.config
+cp -r .config  ~/
 
 #copy openbox configuration
 #mkdir -p ~/.config/openbox
