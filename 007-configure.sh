@@ -80,6 +80,7 @@ systemctl --user start mpdsonglisten
 # install and enable rtorrent
 sudo pacman -S --noconfirm --needed screen rtorrent
 
+mkdir -p ~/rtorrent
 cp .rtorrent.rc ~/
 
 systemctl --user enable rtorrent
