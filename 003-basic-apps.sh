@@ -14,3 +14,5 @@ sudo pacman -S --noconfirm --needed zsh zsh-completions zsh-syntax-highlighting
 
 # install oh-my-zsh from github
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+echo "If you now log out and log in again, you will be greeted by the other shell (chsh -s /bin/zsh)"
