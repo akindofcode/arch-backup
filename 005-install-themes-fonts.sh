@@ -18,7 +18,9 @@ packer -S --noconfirm --noedit breeze-default-cursor-theme
 
 sudo pacman -S --noconfirm --needed noto-fonts
 
-packer -S --noconfirm --noedit ttf-font-awesome-4 ttf-mononoki
+packer -S --noconfirm --noedit ttf-font-awesome-4 
+
+packer -S --noconfirm --noedit ttf-mononoki
 
 mkdir -p ~/.themes
 cp -r .themes/* ~/.themes/
