@@ -21,7 +21,7 @@ echo "auth        sufficient  pam_succeed_if.so user ingroup nopasswdlogin" | su
 sudo cp /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.old
 echo '[Seat:*]' | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
 foo="autologin-user=$USER"
-echo foo | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
+echo $foo | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
 
 # echo 'autologin-session=openbox' | sudo tee --append /etc/lightdm /lightdm.conf > /dev/null
 # if commented, defaults to last selected session
