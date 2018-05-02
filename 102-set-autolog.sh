@@ -19,7 +19,7 @@ sudo cp /etc/pam.d/lightdm /etc/pam.d/lightdm.old
 echo "auth        sufficient  pam_succeed_if.so user ingroup nopasswdlogin" | sudo tee --append /etc/pam.d/lightdm > /dev/null
 
 sudo cp /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.old
-echo '[Seat:*]' | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
+echo '\n[Seat:*]' | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
 foo="autologin-user=$USER"
 echo $foo | sudo tee --append /etc/lightdm/lightdm.conf > /dev/null
 
