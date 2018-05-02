@@ -2,7 +2,7 @@
 
 Info on installing and ricing arch linux + dot files backup
 
-Baseline: clean arch install + lightdm, openbox, git, vim, rxvt-unicode, ntfs-3g, nvidia
+Baseline: arch-linux-base-devel + openbox + lightdm +  rxvt-unicode + vim + git + ntfs-3g + nvidia
 
 `git clone https://github.com/akindofcode/arch-install.git`
 
@@ -47,7 +47,6 @@ Disable second screen and save
 #mirror
 
 `xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1`
-
 
 ### wallpaper
 
