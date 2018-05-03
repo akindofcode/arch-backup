@@ -20,14 +20,14 @@ compton -b -c --config ~/.config/compton/compton.conf &
 
 nitrogen --restore & # restore the background chosen with nitrogen
 
-tint2 &
+# tint2 &
 
-#polybar example &
+polybar top &
 
 numlockx & 
 
-(sleep 2; volumeicon) &
+# (sleep 2; volumeicon) &
 
-(sleep 2; nm-applet) &
+# (sleep 2; nm-applet) &
 
 #(sleep 3; mpd ~/.config/mpd/mpd.conf) &

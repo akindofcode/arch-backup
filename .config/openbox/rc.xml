@@ -203,6 +203,7 @@
     </keybind>
     <keybind key="W-1">
       <action name="Desktop"/>
+      	<desktop>1</desktop>
     </keybind>
     <keybind key="W-2">
       <action name="Desktop">
@@ -221,6 +222,7 @@
     </keybind>
     <keybind key="W-F1">
       <action name="Desktop"/>
+      	<desktop>1</desktop>
     </keybind>
     <keybind key="W-F2">
       <action name="Desktop">
@@ -1190,8 +1192,8 @@
       <decor>no</decor>
       <shade>no</shade>
       <position force="yes">
-        <x>-10</x>
-        <y>10</y>
+        <x>-5</x>
+        <y>5</y>
         <monitor>1</monitor>
       </position>
       <size>
@@ -1214,8 +1216,8 @@
       <position force="yes">
         <!--<x>10</x>
         <y>10</y>-->
-        <x>-10</x>
-        <y>120</y>
+        <x>-5</x>
+        <y>115</y>
         <monitor>1</monitor>
       </position>
       <focus>no</focus>
@@ -1232,8 +1234,8 @@
       <decor>no</decor>
       <shade>no</shade>
       <position force="yes">
-        <x>-10</x>
-        <y>430</y>
+        <x>-5</x>
+        <y>425</y>
         <monitor>1</monitor>
       </position>
        <size>
