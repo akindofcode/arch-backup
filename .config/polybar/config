@@ -26,6 +26,8 @@ modules-left = ewmh
 modules-center = xwindow
 modules-right = volume mpd date powermenu
 
+override-redirect = false
+
 ;tray-position = right
 ;tray-padding = 2
 ;tray-background = #66333333
