@@ -1188,6 +1188,19 @@
       <fullscreen>yes</fullscreen>
     </application>
 
+	<!-- Open terminal windows in desktop 3 and focus -->
+    <application class="Termite">
+      <desktop>3</desktop>
+      <focus>yes</focus>
+    </application>
+
+	<!-- Open Sublime Text in desktop 4 and focus -->
+    <application class="Sublime_text">
+      <desktop>4</desktop>
+      <focus>yes</focus>
+    </application>
+
+	<!-- Open terminal with cava in desktop 1 -->
     <application title="cava">
       <decor>no</decor>
       <shade>no</shade>
@@ -1201,7 +1214,7 @@
         <height>100</height>
       </size>
       <focus>no</focus>
-      <desktop>1</desktop>
+      <desktop>2</desktop>
       <layer>below</layer>
       <iconic>no</iconic>
       <skip_pager>no</skip_pager>
@@ -1210,6 +1223,7 @@
       <maximized>no</maximized>
     </application>
 
+	<!-- Open cover art in desktop 1 -->
     <application title="feh [1 of 1] - /tmp/cover.jpg">
       <decor>no</decor>
       <shade>no</shade>
@@ -1221,7 +1235,7 @@
         <monitor>1</monitor>
       </position>
       <focus>no</focus>
-      <desktop>1</desktop>
+      <desktop>2</desktop>
       <layer>below</layer>
       <iconic>no</iconic>
       <skip_pager>no</skip_pager>
@@ -1230,6 +1244,7 @@
       <maximized>no</maximized>
     </application>
 
+	<!-- Open terminal with mpdlyrics in desktop 1 -->
     <application title="mpdlyrics">
       <decor>no</decor>
       <shade>no</shade>
@@ -1243,7 +1258,7 @@
         <height>612</height>
       </size>
       <focus>no</focus>
-      <desktop>1</desktop>
+      <desktop>2</desktop>
       <layer>below</layer>
       <iconic>no</iconic>
       <skip_pager>no</skip_pager>
