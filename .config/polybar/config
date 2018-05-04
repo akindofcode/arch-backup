@@ -340,4 +340,10 @@ label-disconnected = not connected
 [module/arch-updates]
 type = custom/script
 exec = ~/.bin/arch-updates.sh
-interval = 600
+interval = 60
+
+format = <label>
+format-foreground = #FF0000
+format-padding = 2
+
+label = %output%
