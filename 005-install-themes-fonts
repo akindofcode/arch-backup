@@ -22,6 +22,9 @@ packer -S --noconfirm --noedit ttf-font-awesome-4
 
 packer -S --noconfirm --noedit ttf-mononoki
 
+# siji font needed for polybar
+packer -S --noconfirm --noedit siji-git
+
 mkdir -p ~/.themes
 cp -r .themes/* ~/.themes/
 
