@@ -324,6 +324,7 @@ format-online =    <label-song>
 label-song = %artist% - %title%
 format-online-padding = 3
 
+click-left = xdotool set_desktop 2
 
 [module/wlan]
 type = internal/network
