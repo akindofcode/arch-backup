@@ -347,3 +347,5 @@ format-foreground = #a00909
 format-padding = 2
 
 label = %output%
+
+click-left = update-system
