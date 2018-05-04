@@ -5,7 +5,7 @@ offset-x = 0
 offset-y = -1 
 ;bottom = true
 
-monitor = "DVI-I-1"
+#monitor = "DVI-I-1"
 background = #5a000000
 foreground = #eee
 
@@ -24,7 +24,7 @@ font-2 = siji:pixelsize=10;3
 
 modules-left = ewmh 
 modules-center = xwindow
-modules-right = volume mpd date powermenu
+modules-right = volume wlan mpd date powermenu
 
 override-redirect = false
 
@@ -323,3 +323,16 @@ format-online =    <label-song>
 ; Default: %artist% - %title%
 label-song = %artist% - %title%
 format-online-padding = 3
+
+
+[module/wlan]
+type = internal/network
+interface = enp0s3
+interval = 3.0
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+label-connected =  %downspeed:9%
+label-connected-padding = 2
+label-disconnected-padding = 2
+label-disconnected = not connected
