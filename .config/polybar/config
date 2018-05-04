@@ -343,7 +343,7 @@ exec = ~/.bin/arch-updates.sh
 interval = 60
 
 format = <label>
-format-foreground = #FF0000
+format-foreground = #a00909
 format-padding = 2
 
 label = %output%
