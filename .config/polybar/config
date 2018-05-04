@@ -24,7 +24,7 @@ font-2 = siji:pixelsize=10;3
 
 modules-left = ewmh 
 modules-center = xwindow
-modules-right = volume wlan mpd date powermenu
+modules-right = volume wlan arch-updates mpd date powermenu
 
 override-redirect = false
 
@@ -336,3 +336,8 @@ label-connected =  %downspeed:9%
 label-connected-padding = 2
 label-disconnected-padding = 2
 label-disconnected = not connected
+
+[module/arch-updates]
+type = custom/script
+exec = ~/.bin/arch-updates.sh
+interval = 600
