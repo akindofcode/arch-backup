@@ -348,4 +348,4 @@ format-padding = 2
 
 label = %output%
 
-click-left = update-system
+click-left = /.bin/update-system
