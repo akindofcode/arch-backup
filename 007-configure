@@ -6,6 +6,10 @@ cp .Xresources ~/
 # copy .zshrc
 cp .zshrc ~/
 
+# copy .vimrc
+cp .vimrc ~/
+cp -r .vim ~/
+
 #copy pipelines and scripts to ~/.bin
 mkdir -p ~/.bin
 cp .bin/* ~/.bin/
