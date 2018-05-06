@@ -1228,11 +1228,12 @@
 
 	<!-- Open Sublime Text in desktop 4 and focus -->
     <application class="Sublime_text">
+      <decor>no</decor>
       <desktop>4</desktop>
       <focus>yes</focus>
     </application>
 
-	<!-- Open terminal with cava in desktop 1 -->
+	<!-- Open terminal with cava in desktop 2 -->
     <application title="cava">
       <decor>no</decor>
       <shade>no</shade>
@@ -1255,7 +1256,7 @@
       <maximized>no</maximized>
     </application>
 
-	<!-- Open cover art in desktop 1 -->
+	<!-- Open cover art in desktop 2 -->
     <application title="feh [1 of 1] - /tmp/cover.jpg">
       <decor>no</decor>
       <shade>no</shade>
@@ -1276,7 +1277,7 @@
       <maximized>no</maximized>
     </application>
 
-	<!-- Open terminal with mpdlyrics in desktop 1 -->
+	<!-- Open terminal with mpdlyrics in desktop 2 -->
     <application title="mpdlyrics">
       <decor>no</decor>
       <shade>no</shade>
