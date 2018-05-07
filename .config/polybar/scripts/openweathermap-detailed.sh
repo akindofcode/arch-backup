@@ -27,7 +27,7 @@ get_icon() {
 CITY="3129135"
 API_KEY="52c37ed729a408cd4e3647aa39422e71"
 UNITS="Metric"
-UNIT_KEY="ºC"
+UNIT_KEY="º"
 
 
 if [ ! -z $CITY ]; then 
@@ -46,9 +46,10 @@ else
 fi
 
 if [ ! -z "$weather" ]; then
-    weather_desc=$(echo "$weather" | jq -r ".weather[].description")
+    weather_desc=$(echo "$weather" | jq -r ".weather[0].description")
     weather_temp=$(echo "$weather" | jq ".main.temp" | cut -d "." -f 1)
     weather_icon=$(echo "$weather" | jq -r ".weather[].icon")
 
-    echo "$(get_icon "$weather_icon")" "$weather_desc", "$weather_temp$SYMBOL""$UNIT_KEY"
+    #echo "$(get_icon "$weather_icon")" "$weather_desc", "$weather_temp$SYMBOL""$UNIT_KEY"
+    echo "$(get_icon "$weather_icon")" "$weather_temp$SYMBOL""$UNIT_KEY"
 fi
