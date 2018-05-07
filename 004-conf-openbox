@@ -6,7 +6,10 @@ cp -R /etc/xdg/openbox ~/.config
 
 sudo pacman -S --noconfirm --needed obconf lxappearance-gtk3 lxappearance-obconf-gtk3 neofetch oblogout zenity dunst
 
-sudo pacman -S --noconfirm --needed tint2 dmenu feh nitrogen rofi xfce4-appfinder gmrun numlockx xfce4-notifyd volumeicon compton
+sudo pacman -S --noconfirm --needed dmenu feh nitrogen rofi xfce4-appfinder gmrun numlockx compton
+
+# not needed anymore
+# tint2 xfce4-notifyd volumeicon
 
 packer -S --noconfirm --noedit obmenu3
 
@@ -28,8 +31,8 @@ packer -S ttf-weather-icons
 packer -S --noconfirm --noedit polybar-git
 
 # not needed
-echo "compton -b -c --config ~/.config/compton/compton.conf &" >> ~/.config/openbox/autostart
-echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
-echo "volumeicon &" >> ~/.config/openbox/autostart
-echo "numlockx &" >> ~/.config/openbox/autostart
-echo "tint2 &" >> ~/.config/openbox/autostart
+# echo "compton -b -c --config ~/.config/compton/compton.conf &" >> ~/.config/openbox/autostart
+# echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
+# echo "volumeicon &" >> ~/.config/openbox/autostart
+# echo "numlockx &" >> ~/.config/openbox/autostart
+# echo "tint2 &" >> ~/.config/openbox/autostart
