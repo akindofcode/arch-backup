@@ -131,7 +131,7 @@ date-alt = %A, %d %B %Y
 time-alt = %H:%M:%S
 
 label = %date% %time%
-format =    <label>
+format =   <label>
 ;format-background = #ddffffff
 format-background = #88000000
 ;format-foreground = #333
@@ -146,13 +146,13 @@ content-background = #55000000
 [module/volume]
 type = internal/alsa
 
-format-volume = <ramp-volume>  <label-volume>
+format-volume = <ramp-volume> <label-volume>
 format-muted = <label-muted>
 label-volume = %percentage%
 label-muted =   muted
 label-muted-foreground = #aaa
-format-volume-padding = 3
-format-muted-padding = 3
+format-volume-padding = 2
+format-muted-padding = 2
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -225,7 +225,7 @@ format-online = <label-song>
 ;   %title%
 ; Default: %artist% - %title%
 label-song =     %artist% - %title%
-format-online-padding = 3
+format-online-padding = 2
 
 ;click-left = xdotool set_desktop 1
 
@@ -245,10 +245,9 @@ label-disconnected = not connected
 [module/arch-updates]
 type = custom/script
 exec = ~/.config/polybar/scripts/arch-updates.sh
-interval = 5
+interval = 600
 
 format = <label>
-;format-foreground = #a00909
 format-padding = 2
 
 label = %output%
@@ -259,9 +258,18 @@ click-left = termite -e ~/.bin/update-system
 type = custom/script
 interval = 60
 exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
+
 label-font = 3
-format-padding = 4
+format-padding = 2
+
 click-left = vivaldi-stable https://www.openweathermap.org/city/3129135
+
+
+
+
+
+
+
 
 
 ;[module/battery]
