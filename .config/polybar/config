@@ -292,7 +292,7 @@ label-disconnected = not connected
 
 [module/arch-updates]
 type = custom/script
-exec = ~/.bin/arch-updates.sh
+exec = ~/.config/polybar/scripts/arch-updates.sh
 interval = 5
 
 format = <label>
