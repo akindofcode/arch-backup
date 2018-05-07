@@ -1300,6 +1300,30 @@
       <maximized>no</maximized>
     </application>
 
+	<!-- Open terminal with ncmpcpp in desktop 2 -->
+    <application title="ncmpcpp">
+      <decor>no</decor>
+      <shade>no</shade>
+      <position force="yes">
+        <x>5</x>
+        <y>5</y>
+        <monitor>1</monitor>
+      </position>
+      <!--<size>
+        <width>300</width>
+        <height>612</height>
+      </size>-->
+      <focus>yes</focus>
+      <desktop>2</desktop>
+      <layer>normal</layer>
+      <iconic>no</iconic>
+      <skip_pager>no</skip_pager>
+      <skip_taskbar>no</skip_taskbar>
+      <fullscreen>no</fullscreen>
+      <maximized>no</maximized>
+    </application>
+
+	<!-- Open vivaldi in desktop 1 -->
     <application name="vivaldi-stable">
       <decor>no</decor>
       <shade>no</shade>
@@ -1322,9 +1346,13 @@
       <maximized>yes</maximized>
     </application>
 
+	<!-- Open mpv in desktop 6 -->
     <application class="mpv">
       <decor>no</decor>
+      <focus>yes</focus>
       <maximize>yes</maximize>
+      <desktop>6</desktop>
+      <fullscreen>yes</fullscreen>
       <layer>above</layer>
     </application>
     <!--
