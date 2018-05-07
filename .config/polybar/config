@@ -5,7 +5,7 @@ offset-x = 0
 offset-y = -1 
 ;bottom = true
 
-monitor = "DVI-I-1"
+#monitor = "DVI-I-1"
 #monitor = "VGA-1"
 background = #5a000000
 foreground = #eee
@@ -26,7 +26,7 @@ font-2 = Weather Icons:size=12;1
 
 modules-left = ewmh 
 modules-center = xwindow
-modules-right = volume wlan arch-updates mpd weather date powermenu
+modules-right = volume wlan arch-updates mpd openweathermap-detailed date powermenu
 
 override-redirect = false
 
@@ -303,15 +303,23 @@ label = %output%
 
 click-left = termite -e ~/.bin/update-system
 
-[module/weather]
+;[module/weather]
+;type = custom/script
+;interval = 10
+;format = <label>
+;format-prefix = " "
+;format-padding = 4
+;;format-prefix-foreground = #3EC13F
+;;format-underline = #3EC13F
+;;format-foreground = ${colors.foreground}
+;;format-background = ${colors.background}
+;exec = python -u ~/.config/polybar/scripts/weather.py
+;;tail = true
+
+[module/openweathermap-detailed]
 type = custom/script
 interval = 10
-format = <label>
-format-prefix = " "
+exec = ~/.config/polybar/scripts/openweathermap-detailed.sh
+label-font = 3
 format-padding = 4
-;format-prefix-foreground = #3EC13F
-;format-underline = #3EC13F
-;format-foreground = ${colors.foreground}
-;format-background = ${colors.background}
-exec = python -u ~/.config/polybar/scripts/weather.py
-tail = true
+click-left = vivaldi-stable https://www.openweathermap.org/city/3129135
