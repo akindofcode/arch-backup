@@ -21,10 +21,13 @@ packer -S --noconfirm --noedit mons
 #packer -S --noconfirm --noedit i3lock-color-git
 
 # wireless & xdotool tools needed for polybar
-sudo pacman -S --noconfirm --needed wireless_tools xdotool
+sudo pacman -S --noconfirm --needed wireless_tools jq xdotool 
+packer -S ttf-weather-icons
 
-packer -S --noconfirm --noedit polybar
+# install polybar
+packer -S --noconfirm --noedit polybar-git
 
+# not needed
 echo "compton -b -c --config ~/.config/compton/compton.conf &" >> ~/.config/openbox/autostart
 echo "nitrogen --restore & #restore the background chosen with nitrogen" >> ~/.config/openbox/autostart
 echo "volumeicon &" >> ~/.config/openbox/autostart
