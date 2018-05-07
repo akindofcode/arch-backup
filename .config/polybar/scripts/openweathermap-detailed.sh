@@ -41,7 +41,7 @@ else
         location_lat="$(echo "$location" | jq '.location.lat')"
         location_lon="$(echo "$location" | jq '.location.lng')"
 
-        weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?appid=$KEY&lat=$location_lat&lon=$location_lon&units=$UNITS")
+        weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?appid=$API_KEY&lat=$location_lat&lon=$location_lon&units=$UNITS")
     fi
 fi
 
