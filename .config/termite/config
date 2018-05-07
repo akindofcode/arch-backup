@@ -34,58 +34,35 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 [colors]
-# https://critical.ch/xterm/
-#foreground      = ghost
-foreground      = #f8f8ff
-foreground_bold = #c5c8c6
-cursor          = #c5c8c6
-#background      = #1d1f21
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
-# Arc theme
-background = rgba(64, 69, 82, 0.9)
+###############################
+# Arc theme                   #
+###############################
 
-#Standard Archlabs coloring
-# colors from color0 to color254 can be set
-#color0  = #282a2e
-#color1  = #a54242
-#color2  = #8c9440
-#color3  = #de935f
-#color4  = #5f819d
-#color5  = #85678f
-#color6  = #5e8d87
-#color7  = #707880
-#color8  = #373b41
-#color9  = #cc6666
-#color10 = #b5bd68
-#color11 = #f0c674
-#color12 = #81a2be
-#color13 = #b294bb
-#color14 = #8abeb7
-#color15 = #c5c8c6
+## foreground      = #f8f8ff
+## foreground_bold = #c5c8c6
+## cursor          = #c5c8c6
+## background = rgba(64, 69, 82, 0.9)
+## color0 = #3f3f3f
+## color1 = #705050
+## color2 = #60b48a
+## color3 = #dfaf8f
+## color4 = #506070
+## color5 = #dc8cc3
+## color6 = #8cd0d3
+## color7 = #dcdccc
+## color8 = #709080
+## color9 = #dca3a3
+## color10 = #c3bf9f
+## color11 = #f0dfaf
+## color12 = #94bff3
+## color13 = #ec93d3
+## color14 = #93e0e3
+## color15 = #ffffff
 
-# Arc theme coloring
-# colors from color0 to color254 can be set
-
-# color0 = #3f3f3f
-# color1 = #705050
-# color2 = #60b48a
-# color3 = #dfaf8f
-# color4 = #506070
-# color5 = #dc8cc3
-# color6 = #8cd0d3
-# color7 = #dcdccc
-# color8 = #709080
-# color9 = #dca3a3
-# color10 = #c3bf9f
-# color11 = #f0dfaf
-# color12 = #94bff3
-# color13 = #ec93d3
-# color14 = #93e0e3
-# color15 = #ffffff
-
-# one dark
+###############################
+# One Dark theme              #
+###############################
 
 # special
 foreground      = #abb2bf
@@ -124,6 +101,211 @@ color14 = #3c909b
 # white
 color7  = #abb2bf
 color15 = #828997
+
+
+###############################
+# Base16 monokai              #
+# Author: Wimer Hazenberg     #
+# (http://www.monokai.nl)     #
+###############################
+
+## foreground      = #f8f8f2
+## foreground_bold = #f5f4f1
+## cursor          = #f5f4f1
+## background      = #272822
+## 
+## # 16 color space
+## 
+## # Black, Gray, Silver, White
+## color0  = #272822
+## color8  = #75715e
+## color7  = #f8f8f2
+## color15 = #f9f8f5
+## 
+## # Red
+## color1  = #f92672
+## color9  = #f92672
+## 
+## # Green
+## color2  = #a6e22e
+## color10 = #a6e22e
+## 
+## # Yellow
+## color3  = #f4bf75
+## color11 = #f4bf75
+## 
+## # Blue
+## color4  = #66d9ef
+## color12 = #66d9ef
+## 
+## # Purple
+## color5  = #ae81ff
+## color13 = #ae81ff
+## 
+## # Teal
+## color6  = #a1efe4
+## color14 = #a1efe4
+## 
+## # Extra colors
+## color16 = #fd971f
+## color17 = #cc6633
+## color18 = #383830
+## color19 = #49483e
+## color20 = #a59f85
+## color21 = #f5f4f1
+
+#########################################
+# Base16 Solarized Dark                 #
+# Author: Ethan Schoonover              #
+# http://ethanschoonover.com/solarized) #
+#########################################
+
+## foreground      = #93a1a1
+## foreground_bold = #eee8d5
+## cursor          = #eee8d5
+## background      = #002b36
+## 
+## # 16 color space
+## 
+## # Black, Gray, Silver, White
+## color0  = #002b36
+## color8  = #657b83
+## color7  = #93a1a1
+## color15 = #fdf6e3
+## 
+## # Red
+## color1  = #dc322f
+## color9  = #dc322f
+## 
+## # Green
+## color2  = #859900
+## color10 = #859900
+## 
+## # Yellow
+## color3  = #b58900
+## color11 = #b58900
+## 
+## # Blue
+## color4  = #268bd2
+## color12 = #268bd2
+## 
+## # Purple
+## color5  = #6c71c4
+## color13 = #6c71c4
+## 
+## # Teal
+## color6  = #2aa198
+## color14 = #2aa198
+## 
+## # Extra colors
+## color16 = #cb4b16
+## color17 = #d33682
+## color18 = #073642
+## color19 = #586e75
+## color20 = #839496
+## color21 = #eee8d5
+
+
+#####################################
+# Base16 Dracula                    #
+# Author: Mike Barkmin              #
+# (http://github.com/mikebarkmin)   #
+#####################################
+
+## foreground      = #e9e9f4
+## foreground_bold = #f1f2f8
+## cursor          = #f1f2f8
+## background      = #282936
+## 
+## # 16 color space
+## 
+## # Black, Gray, Silver, White
+## color0  = #282936
+## color8  = #626483
+## color7  = #e9e9f4
+## color15 = #f7f7fb
+## 
+## # Red
+## color1  = #ea51b2
+## color9  = #ea51b2
+## 
+## # Green
+## color2  = #ebff87
+## color10 = #ebff87
+## 
+## # Yellow
+## color3  = #00f769
+## color11 = #00f769
+## 
+## # Blue
+## color4  = #62d6e8
+## color12 = #62d6e8
+## 
+## # Purple
+## color5  = #b45bcf
+## color13 = #b45bcf
+## 
+## # Teal
+## color6  = #a1efe4
+## color14 = #a1efe4
+## 
+## # Extra colors
+## color16 = #b45bcf
+## color17 = #00f769
+## color18 = #3a3c4e
+## color19 = #4d4f68
+## color20 = #62d6e8
+## color21 = #f1f2f8
+
+############################
+# Base16 Nord              #
+# Author: arcticicestudio  # #
+############################
+
+## foreground      = #E5E9F0
+## foreground_bold = #ECEFF4
+## cursor          = #ECEFF4
+## background      = #2E3440
+## 
+## # 16 color space
+## 
+## # Black, Gray, Silver, White
+## color0  = #2E3440
+## color8  = #4C566A
+## color7  = #E5E9F0
+## color15 = #8FBCBB
+## 
+## # Red
+## color1  = #88C0D0
+## color9  = #88C0D0
+## 
+## # Green
+## color2  = #BF616A
+## color10 = #BF616A
+## 
+## # Yellow
+## color3  = #5E81AC
+## color11 = #5E81AC
+## 
+## # Blue
+## color4  = #EBCB8B
+## color12 = #EBCB8B
+## 
+## # Purple
+## color5  = #A3BE8C
+## color13 = #A3BE8C
+## 
+## # Teal
+## color6  = #D08770
+## color14 = #D08770
+## 
+## # Extra colors
+## color16 = #81A1C1
+## color17 = #B48EAD
+## color18 = #3B4252
+## color19 = #434C5E
+## color20 = #D8DEE9
+## color21 = #ECEFF4
 
 [hints]
 #font = Monospace 12
