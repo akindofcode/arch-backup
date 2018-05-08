@@ -168,3 +168,24 @@ fetchart
 Add Music to /etc/fstab
 
 /dev/sdd1 /run/media/chema/Music ntfs-3g uid=chema gid=users 0 0
+
+### mps-youtube
+
+Once you install mps-youtube, launch it with:
+
+$ mpsyt
+Then type h to see the options. For quick usage, you can just do:
+
+/[query]
+to search for something, then type the number ID of the video to listen to its sound, or type:
+
+i [video-number]
+to see its information, and type:
+
+d [video-number]
+to download it. If just listening is not enough for you, here is the trick:
+
+set player mpv
+set show_video True
+set max_res 1080
+set fullscreen True
