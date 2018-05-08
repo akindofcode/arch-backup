@@ -7,17 +7,13 @@ packer -S --noedit --noconfirm cava pulsemixer
 
 # install beets
 
-packer -S --noedit --noconfirm beets beets-copyartifacts-git
+packer -S --noedit --noconfirm beets beets-copyartifacts-git python-discogs-client
 
-sudo pacman -S --needed --noconfirm python-pip
+sudo pacman -S --needed --noconfirm python-pip python-requests python-pylast python-pip
 
-sudo pip install --upgrade pip
+# sudo pip install --upgrade pip
 
-sudo pip install discogs-client
-
-sudo pip install pylast
-
-sudo pip install requests
+# sudo pip install discogs-client
 
 #sudo pip install beets-copyartifacts
 # if copyartifacts doesn't work
