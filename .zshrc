@@ -94,5 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias play='beet play'
+alias install='packer -S --noedit --noconfirm'
 
 export LC_CTYPE=$LANG
