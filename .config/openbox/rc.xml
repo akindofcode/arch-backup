@@ -758,13 +758,15 @@
     <keybind key="W-A-F1">
       <!-- first screen only -->
       <action name="Execute">
-        <command>mons -o</command>
+        <!--<command>mons -o</command>-->
+        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --off</command>
       </action>
     </keybind>
     <keybind key="W-A-F2">
       <!-- second screen only -->
       <action name="Execute">
-        <command>mons -s</command>
+        <!--<command>mons -s</command>-->
+        <command>xrandr --output DVI-I-1 --off --output DVI-D-0 --auto</command>
       </action>
     </keybind>
     <keybind key="A-Right">
