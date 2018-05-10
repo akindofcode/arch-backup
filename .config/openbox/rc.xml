@@ -1224,6 +1224,7 @@
 
 	<!-- Open terminal windows in desktop 3 and focus -->
     <application class="Termite">
+      <decor>no</decor>
       <desktop>3</desktop>
       <focus>yes</focus>
     </application>
@@ -1307,14 +1308,14 @@
       <decor>no</decor>
       <shade>no</shade>
       <position force="yes">
-        <x>5</x>
-        <y>5</y>
+        <x>10</x>
+        <y>10</y>
         <monitor>1</monitor>
       </position>
-      <!--<size>
-        <width>300</width>
-        <height>612</height>
-      </size>-->
+      <size>
+        <width>640</width>
+        <height>1030</height>
+      </size>
       <focus>yes</focus>
       <desktop>2</desktop>
       <layer>normal</layer>
