@@ -95,5 +95,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias play='beet play'
 alias install='packer -S --noedit --noconfirm'
+alias neofetch='clear; neofetch'
+
+alias refugees='pacman -Qm'
+#Clean orphan packages from the system
+alias anakin="sudo pacman -Rns \$(pacman -Qtdq)"
+
+alias gj="git add .; git commit -m 'update'; git push"
+
 
 export LC_CTYPE=$LANG
