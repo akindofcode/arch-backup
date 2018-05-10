@@ -102,6 +102,6 @@ alias refugees='pacman -Qm'
 alias anakin="sudo pacman -Rns \$(pacman -Qtdq)"
 
 alias gj="git add .; git commit -m 'update'; git push"
-
+alias ls="ls --group-directories-first --color=always -A"
 
 export LC_CTYPE=$LANG
