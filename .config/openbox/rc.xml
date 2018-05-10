@@ -1355,6 +1355,26 @@
       <fullscreen>yes</fullscreen>
       <layer>above</layer>
     </application>
+
+
+	<!-- Open htop in desktop 2 -->
+    <application title="htop">
+      <decor>no</decor>
+      <focus>yes</focus>
+      <maximize>no</maximize>
+      <desktop>3</desktop>
+      <position force="yes">
+        <x>-10</x>
+        <y>10</y>
+        <monitor>1</monitor>
+      </position>
+      <size>
+        <width>600</width>
+        <height>105</height>
+      </size>
+      <fullscreen>no</fullscreen>
+      <layer>above</layer>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
