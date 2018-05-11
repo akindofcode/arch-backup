@@ -88,23 +88,6 @@ New fonts cabn be installed to /.local/share/fonts or /usr/share/fonts
 
 `fc-cache -fv`
 
-### Tint2
-
-<https://gitlab.com/o9000/tint2/blob/master/doc/tint2.md>
-
-<https://github.com/addy-dclxvi/Tint2-Theme-Collections>
-
-<https://github.com/adi1090x/my_dotfiles/tree/master/.config/tint2>
-
-
-### Polybar
-
-### Lemonbar
-
-### i3block
-
-### Zsh
-
 ### Silent boot
 
 remove fsck from HOOKS=(...) in /etc/mkinitpcio.conf
