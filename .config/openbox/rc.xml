@@ -1372,8 +1372,8 @@
         <monitor>1</monitor>
       </position>
       <size>
-        <width>600</width>
-        <height>105</height>
+        <width>500</width>
+        <height>125</height>
       </size>
       <fullscreen>no</fullscreen>
       <layer>above</layer>
