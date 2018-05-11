@@ -53,6 +53,16 @@ Disable second screen and save
 
 `xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1`
 
+### openbox theming
+
+Openbox wiki: http://openbox.org/wiki/Help:Contents#Configuration
+
+Window border width:
+
+Let's say you use the waldorf theme with openbox. You go to /usr/share/themes/waldorf/openbox-3/themerc and search the line
+
+border.Width: 1
+
 ### wallpaper
 
 `nitrogen ~/wallpapers`
