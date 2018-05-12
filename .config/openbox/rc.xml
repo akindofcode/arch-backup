@@ -185,635 +185,152 @@
         <command>openbox --reconfigure</command>
       </action>
     </keybind>
-    <!-- Desktop keybindings -->
-    <keybind key="C-A-Left">
-      <action name="DesktopLeft"/>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="DesktopRight"/>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="Desktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="Desktop"/>
-    </keybind>
-    <keybind key="W-1">
-      <action name="Desktop">
-        <desktop>1</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="Desktop">
-        <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-5">
-      <action name="Desktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-6">
-      <action name="Desktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="Desktop">
-        <desktop>1</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="Desktop">
-        <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="Desktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F5">
-      <action name="Desktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F6">
-      <action name="Desktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-1">
-      <action name="SendToDesktop">
-        <desktop>1</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-2">
-      <action name="SendToDesktop">
-        <desktop>2</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-3">
-      <action name="SendToDesktop">
-        <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-4">
-      <action name="SendToDesktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-5">
-      <action name="SendToDesktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-A-6">
-      <action name="SendToDesktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <!-- Desktop keybindings -->
-    <!-- Window keybindings -->
-    <keybind key="W-KP_1">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_2">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
-        <width>100%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_3">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>-0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_4">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>100%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_5">
-      <action name="MaximizeFull"/>
-    </keybind>
-    <keybind key="W-KP_6">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>100%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_7">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_8">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>100%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="W-KP_9">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-    </keybind>
-    <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdgeEast"/>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-      </action>
-      <action name="MoveToEdgeWest"/>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="MaximizeFull"/>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <width>80%</width>
-        <height>80%</height>
-      </action>
-      <action name="MoveToCenter"/>
-    </keybind>
-    <keybind key="W-A-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>50%</width>
-      </action>
-    </keybind>
-    <keybind key="W-A-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <width>50%</width>
-      </action>
-    </keybind>
-    <keybind key="A-r">
-      <action name="Resize"/>
-    </keybind>
-    <keybind key="A-m">
-      <action name="Move"/>
-    </keybind>
-    <keybind key="S-W-q">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-F5">
-      <action name="Iconify"/>
-    </keybind>
-    <keybind key="A-F6">
-      <action name="ToggleMaximize"/>
-    </keybind>
-    <keybind key="A-F8">
-      <action name="ToggleDecorations"/>
-    </keybind>
-    <keybind key="A-F4">
-      <action name="Close"/>
-    </keybind>
-    <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-Tab">
-      <action name="NextWindow"/>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows"/>
-    </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows"/>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows"/>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows"/>
-    </keybind>
-    <!-- resize windows with Alt + Direction -->
-    <keybind key="A-Right">
-      <action name="GrowToEdgeEast"/>
-    </keybind>
-    <keybind key="A-Left">
-      <action name="GrowToEdgeWest"/>
-    </keybind>
-    <keybind key="A-Down">
-      <action name="GrowToEdgeSouth"/>
-    </keybind>
-    <keybind key="A-Up">
-      <action name="GrowToEdgeNorth"/>
-    </keybind>
-    <!-- move windows with Ctrl + Direction -->
-    <keybind key="C-Right">
-      <action name="MoveResizeTo">
-        <x>-0</x>
-      </action>
-    </keybind>
-    <keybind key="C-Left">
-      <action name="MoveResizeTo">
-        <x>0</x>
-      </action>
-    </keybind>
-    <keybind key="C-Down">
-      <action name="MoveResizeTo">
-        <y>-0</y>
-      </action>
-    </keybind>
-    <keybind key="C-Up">
-      <action name="MoveResizeTo">
-        <y>0</y>
-      </action>
-    </keybind>
-    <!-- Window keybindings -->
-    <!-- Programs keybindings -->
-    <keybind key="W-q">
-      <action name="Execute">
-        <command>termite -e 'screen -D -r rtorrent'</command>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="Execute">
-        <command>vivaldi-stable</command>
-      </action>
-    </keybind>
-    <keybind key="W-e">
-      <action name="Execute">
-        <command>subl</command>
-      </action>
-    </keybind>
-    <keybind key="W-r">
-      <action name="Execute">
-        <command>termite -e ranger</command>
-      </action>
-    </keybind>
-    <keybind key="W-t">
-      <action name="Execute">
-        <command>termite</command>
-      </action>
-    </keybind>
-    <keybind key="W-y">
-      <action name="Execute">
-        <command>~/.config/polybar/launch.sh</command>
-      </action>
-    </keybind>
-    <keybind key="W-u">
-      <action name="Execute">
-        <command>termite -e update-system</command>
-      </action>
-    </keybind>
-    <keybind key="W-i">
-      <action name="Execute">
-        <command>termite</command>
-      </action>
-    </keybind>
-    <keybind key="W-o">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <!-- CAMBIAR -->
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>mons -n left</command>
-      </action>
-    </keybind>
-    <keybind key="W-a">
-      <action name="Execute">
-        <command>art</command>
-      </action>
-    </keybind>
-    <keybind key="W-s">
-      <action name="Execute">
-        <command>subl</command>
-      </action>
-    </keybind>
-    <!-- discord -->
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <keybind key="W-g">
-      <action name="Execute">
-        <command>vivaldi-stable www.google.com</command>
-      </action>
-    </keybind>
-    <keybind key="W-h">
-      <action name="Execute">
-        <command>termite -e htop</command>
-      </action>
-    </keybind>
-    <keybind key="W-j">
-      <action name="Execute">
-        <command/>
-      </action>
-    </keybind>
-    <keybind key="W-k">
-      <action name="Execute">
-        <command/>
-      </action>
-    </keybind>
+  <!-- Desktop keybindings -->
+    <keybind key="C-A-Left"><action name="DesktopLeft"/></keybind>
+    <keybind key="C-A-Right"><action name="DesktopRight"/></keybind>
+    <keybind key="C-A-Up"><action name="Desktop"><desktop>6</desktop></action></keybind>
+    <keybind key="C-A-Down"><action name="Desktop"/></keybind>
+    <keybind key="W-1"><action name="Desktop"><desktop>1</desktop></action></keybind>
+    <keybind key="W-2"><action name="Desktop"><desktop>2</desktop></action></keybind>
+    <keybind key="W-3"><action name="Desktop"><desktop>3</desktop></action></keybind>
+    <keybind key="W-4"><action name="Desktop"><desktop>4</desktop></action></keybind>
+    <keybind key="W-5"><action name="Desktop"><desktop>5</desktop></action></keybind>
+    <keybind key="W-6"><action name="Desktop"><desktop>6</desktop></action></keybind>
+    <keybind key="W-F1"><action name="Desktop"><desktop>1</desktop></action></keybind>
+    <keybind key="W-F2"><action name="Desktop"><desktop>2</desktop></action></keybind>
+    <keybind key="W-F3"><action name="Desktop"><desktop>3</desktop></action></keybind>
+    <keybind key="W-F4"><action name="Desktop"><desktop>4</desktop></action></keybind>
+    <keybind key="W-F5"><action name="Desktop"><desktop>5</desktop></action></keybind>
+    <keybind key="W-F6"><action name="Desktop"><desktop>6</desktop></action></keybind>
+    <keybind key="S-A-1"><action name="SendToDesktop"><desktop>1</desktop></action></keybind>
+    <keybind key="S-A-2"><action name="SendToDesktop"><desktop>2</desktop></action></keybind>
+    <keybind key="S-A-3"><action name="SendToDesktop"><desktop>3</desktop></action></keybind>
+    <keybind key="S-A-4"><action name="SendToDesktop"><desktop>4</desktop></action></keybind>
+    <keybind key="S-A-5"><action name="SendToDesktop"><desktop>5</desktop></action></keybind>
+    <keybind key="S-A-6"><action name="SendToDesktop"><desktop>6</desktop></action></keybind>
+  <!-- Desktop keybindings -->
+
+  <!-- Window keybindings -->
+    <keybind key="W-KP_1"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>0</x><y>-0</y><width>50%</width><height>50%</height></action></keybind>
+    <keybind key="W-KP_2"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action></keybind>
+    <keybind key="W-KP_3"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>-0</x><y>-0</y><width>50%</width><height>50%</height></action></keybind>
+    <keybind key="W-KP_4"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>0</x><y>0</y><width>50%</width><height>100%</height></action></keybind>
+    <keybind key="W-KP_5"><action name="MaximizeFull"/></keybind>
+    <keybind key="W-KP_6"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>-0</x><y>0</y><width>50%</width><height>100%</height></action></keybind>
+    <keybind key="W-KP_7"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>0</x><y>0</y><width>50%</width><height>50%</height></action></keybind>
+    <keybind key="W-KP_8"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>0</x><y>0</y><width>100%</width><height>50%</height></action></keybind>
+    <keybind key="W-KP_9"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><x>-0</x><y>0</y><width>50%</width><height>50%</height></action></keybind>
+    <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
+    <keybind key="W-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width></action><action name="MoveToEdgeEast"/></keybind>
+    <keybind key="W-Left"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width></action><action name="MoveToEdgeWest"/></keybind>
+    <keybind key="W-Up"><action name="MaximizeFull"/></keybind><keybind key="W-Down"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>80%</width><height>80%</height></action><action name="MoveToCenter"/></keybind>
+    <keybind key="W-A-Left"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><x>0</x><y>0</y><width>50%</width></action></keybind>
+    <keybind key="W-A-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><x>-0</x><y>0</y><width>50%</width></action></keybind>
+    <keybind key="A-r"><action name="Resize"/></keybind>
+    <keybind key="A-m"><action name="Move"/></keybind>
+    <keybind key="S-W-q"><action name="Close"/></keybind>
+    <keybind key="A-F4"><action name="Close"/></keybind>
+    <keybind key="A-F5"><action name="Iconify"/></keybind>
+    <keybind key="A-F6"><action name="ToggleMaximize"/></keybind>
+    <keybind key="A-F8"><action name="ToggleDecorations"/></keybind>
+    <keybind key="A-F4"><action name="Close"/></keybind>
+    <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
+    <keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
+    <keybind key="A-Tab"><action name="NextWindow"/></keybind>
+    <keybind key="A-S-Tab"><action name="PreviousWindow"/></keybind>
+    <keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop></action></keybind>
+    <keybind key="W-S-Right"><action name="DirectionalCycleWindows"/></keybind>
+    <keybind key="W-S-Left"><action name="DirectionalCycleWindows"/></keybind>
+    <keybind key="W-S-Up"><action name="DirectionalCycleWindows"/></keybind>
+    <keybind key="W-S-Down"><action name="DirectionalCycleWindows"/></keybind>
+  	<!-- resize windows with Alt + Direction -->
+	<keybind key="A-Right"><action name="GrowToEdgeEast"/></keybind>
+	<keybind key="A-Left"><action name="GrowToEdgeWest"/></keybind>
+	<keybind key="A-Down"><action name="GrowToEdgeSouth"/></keybind>
+	<keybind key="A-Up"><action name="GrowToEdgeNorth"/></keybind>
+	<!-- move windows with Ctrl + Direction -->
+	<keybind key="C-Right"><action name="MoveResizeTo"><x>-0</x></action></keybind>
+	<keybind key="C-Left"><action name="MoveResizeTo"><x>0</x></action></keybind>
+	<keybind key="C-Down"><action name="MoveResizeTo"><y>-0</y></action></keybind>
+	<keybind key="C-Up"><action name="MoveResizeTo"><y>0</y></action></keybind>
+  <!-- Window keybindings -->    
+
+  <!-- Programs keybindings -->
+    <keybind key="W-q"><action name="Execute"><command>termite -e 'screen -D -r rtorrent'</command></action></keybind>
+    <keybind key="W-w"><action name="Execute"><command>vivaldi-stable</command></action></keybind>
+    <keybind key="W-e"><action name="Execute"><command>subl</command></action></keybind>
+    <keybind key="W-r"><action name="Execute"><command>termite -e ranger</command></action></keybind>
+    <keybind key="W-t"><action name="Execute"><command>termite</command></action></keybind>    
+    <keybind key="W-y"><action name="Execute"><command>~/.config/polybar/launch.sh</command></action></keybind>
+    <keybind key="W-u"><action name="Execute"><command>termite -e update-system</command></action></keybind>
+    <keybind key="W-i"><action name="Execute"><command>termite</command></action></keybind>
+    <keybind key="W-o"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
+	<!-- CAMBIAR -->
+    <keybind key="W-p"><action name="Execute"><command>mons -n left</command></action></keybind>
+    <keybind key="W-a"><action name="Execute"><command>art</command></action></keybind>
+    <keybind key="W-s"><action name="Execute"><command>subl</command></action></keybind>
+	<!-- discord -->
+    <keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key="W-f"><action name="Execute"><command>pcmanfm</command></action></keybind>
+    <keybind key="W-g"><action name="Execute"><command>vivaldi-stable www.google.com</command></action></keybind>   
+    <keybind key="W-h"><action name="Execute"><command>termite -e htop</command></action></keybind>
+    <keybind key="W-j"><action name="Execute"><command></command></action></keybind>
+    <keybind key="W-k"><action name="Execute"><command></command></action></keybind>
     <!-- <command>lock.sh</command> -->
-    <keybind key="W-l">
-      <action name="Execute">
-        <command>termite -e mpdlyrics -c /home/chema/.config/termite/config-lyrics</command>
-      </action>
-    </keybind>
-    <keybind key="W-&#xF1;">
-      <action name="Execute">
-        <command/>
-      </action>
-    </keybind>
-    <keybind key="W-z">
-      <action name="Execute">
-        <command>termite --directory ~/Projects/arch-install</command>
-      </action>
-    </keybind>
-    <keybind key="W-x">
-      <action name="Execute">
-        <command>oblogout --config ~/.config/oblogout/oblogout.conf</command>
-      </action>
-    </keybind>
-    <keybind key="W-c">
-      <action name="Execute">
-        <command>termite -e cava</command>
-      </action>
-    </keybind>
+    <keybind key="W-l"><action name="Execute"><command>termite -e mpdlyrics -c /home/chema/.config/termite/config-lyrics</command></action></keybind>
+    <keybind key="W-ñ"><action name="Execute"><command></command></action></keybind>
+    <keybind key="W-z"><action name="Execute"><command>termite --directory ~/Projects/arch-install</command></action></keybind>
+    <keybind key="W-x"><action name="Execute"><command>oblogout --config ~/.config/oblogout/oblogout.conf</command></action></keybind>
+    <keybind key="W-c"><action name="Execute"><command>termite -e cava</command></action></keybind>
     <!-- <command>pavucontrol</command> -->
-    <keybind key="W-v">
-      <action name="Execute">
-        <command>termite -e pulsemixer</command>
-      </action>
-    </keybind>
-    <keybind key="W-b">
-      <action name="ToggleDecorations"/>
-    </keybind>
-    <keybind key="W-n">
-      <action name="Execute">
-        <command>termite -e ncmpcpp</command>
-      </action>
-    </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <command>mpv --player-operation-mode=pseudo-gui --ytdl</command>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>termite -e ranger</command>
-      </action>
-    </keybind>
-    <keybind key="W-space">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun</command>
-      </action>
-    </keybind>
-    <keybind key="W-Tab">
-      <action name="Execute">
-        <command>rofi -modi window -show window</command>
-      </action>
-    </keybind>
-    <keybind key="W-Pause">
-      <action name="Execute">
-        <command>oblogout --config ~/.config/oblogout/oblogout.conf</command>
-      </action>
-    </keybind>
-    <keybind key="W-Escape">
-      <action name="Execute">
-        <command>xkill</command>
-      </action>
-    </keybind>
-    <!-- Programs keybindings -->
-    <keybind key="C-space">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command>
-      </action>
-    </keybind>
-    <keybind key="C-Shift-space">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command>
-      </action>
-    </keybind>
-    <keybind key="W-F11">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command>
-      </action>
-    </keybind>
-    <keybind key="W-F12">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command>
-      </action>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-F2">
-      <action name="Execute">
-        <command>gmrun</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Run Program</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-F3">
-      <action name="Execute">
-        <command>xfce4-appfinder</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-d">
-      <action name="Execute">
-        <command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command>
-      </action>
-    </keybind>
-    <keybind key="S-W-Return">
-      <action name="Execute">
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-r">
-      <action name="Execute">
-        <command>rofi-theme-selector -font "Noto Sans 10"</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-u">
-      <action name="Execute">
-        <command>pavucontrol</command>
-      </action>
-    </keybind>
-    <!-- Toggle monitors -->
-    <!-- first screen only -->
-    <keybind key="W-A-F1">
-      <action name="Execute">
-        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --off</command>
-      </action>
-    </keybind>
-    <!-- second screen only -->
-    <keybind key="W-A-F2">
-      <action name="Execute">
-        <command>xrandr --output DVI-I-1 --off --output DVI-D-0 --auto</command>
-      </action>
-    </keybind>
-    <!-- extend -->
-    <keybind key="W-A-F3">
-      <action name="Execute">
-        <command>xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of</command>
-      </action>
-    </keybind>
+    <keybind key="W-v"><action name="Execute"><command>termite -e pulsemixer</command></action></keybind>
+    <keybind key="W-b"><action name="ToggleDecorations"/></keybind>
+    <keybind key="W-n"><action name="Execute"><command>termite -e ncmpcpp</command></action></keybind>
+    <keybind key="W-m"><action name="Execute"><command>mpv --player-operation-mode=pseudo-gui --ytdl</command></action></keybind>
+    <keybind key="W-Return"><action name="Execute"><command>termite -e ranger</command></action></keybind>
+    <keybind key="W-space"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun</command></action></keybind>
+    <keybind key="W-Tab"><action name="Execute"><command>rofi -modi window -show window</command></action></keybind> 
+    <keybind key="W-Pause"><action name="Execute"><command>oblogout --config ~/.config/oblogout/oblogout.conf</command></action></keybind>
+    <keybind key="W-Escape"><action name="Execute"><command>xkill</command></action></keybind>
+	<!-- Programs keybindings -->
+
+    <keybind key="C-space"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command></action></keybind>
+    <keybind key="C-Shift-space"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command></action></keybind>
+    <keybind key="W-F11"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun -fullscreen -font "Noto Sans 10"</command></action></keybind>
+    <keybind key="W-F12"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun -font "Noto Sans 10"</command></action></keybind>
+    <keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
+    <keybind key="A-F2"><action name="Execute"><command>gmrun</command><startupnotify><enabled>yes</enabled><name>Run Program</name></startupnotify></action></keybind>
+    <keybind key="A-F3"><action name="Execute"><command>xfce4-appfinder</command></action></keybind>
+    <keybind key="W-S-d"><action name="Execute"><command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command></action></keybind>
+    <keybind key="S-W-Return"><action name="Execute"><command>pcmanfm</command></action></keybind>
+    <keybind key="C-A-r"><action name="Execute"><command>rofi-theme-selector -font "Noto Sans 10"</command></action></keybind>
+    <keybind key="C-A-u"><action name="Execute"><command>pavucontrol</command></action></keybind>
+
+  <!-- Toggle monitors -->
+	<!-- first screen only -->
+    <keybind key="W-A-F1"><action name="Execute"><command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --off</command></action></keybind>
+	<!-- second screen only -->
+    <keybind key="W-A-F2"><action name="Execute"><command>xrandr --output DVI-I-1 --off --output DVI-D-0 --auto</command></action></keybind>
+	<!-- extend -->
+    <keybind key="W-A-F3"><action name="Execute"><command>xrandr --output DVI-I-1 --auto --primary --output DVI-D-0 --auto --left-of</command></action></keybind>
     <!-- mirror -->
-    <keybind key="W-A-F4">
-      <action name="Execute">
-        <command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1</command>
-      </action>
-    </keybind>
-    <!-- Toggle monitors -->
-    <!-- Extra keys -->
-    <keybind key="XF86AudioMute">
-      <action name="Execute">
-        <command>amixer set Master toggle</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioLowerVolume">
-      <action name="Execute">
-        <command>amixer set Master 10%-</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>amixer set Master 10%+</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioStop">
-      <action name="Execute">
-        <command>mpc stop</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPlay">
-      <action name="Execute">
-        <command>mpc toggle</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>mpc prev</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>mpc next</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight +10</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -10</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Mail">
-      <action name="Execute">
-        <command>vivaldi-stable https://inbox.google.com/</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Search">
-      <action name="Execute">
-        <command>rofi -modi ssh,window,drun,run -show drun</command>
-      </action>
-    </keybind>
-    <!-- Extra keys -->
+    <keybind key="W-A-F4"><action name="Execute"><command>xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --same-as DVI-I-1</command></action></keybind>
+  <!-- Toggle monitors -->
+
+  <!-- Extra keys -->
+    <keybind key="XF86AudioMute"><action name="Execute"><command>amixer set Master toggle</command></action></keybind>
+    <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>amixer set Master 10%-</command></action></keybind>
+    <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>amixer set Master 10%+</command></action></keybind>
+    <keybind key="XF86AudioStop"><action name="Execute"><command>mpc stop</command></action></keybind>
+    <keybind key="XF86AudioPlay"><action name="Execute"><command>mpc toggle</command></action></keybind>
+    <keybind key="XF86AudioPrev"><action name="Execute"><command>mpc prev</command></action></keybind>
+    <keybind key="XF86AudioNext"><action name="Execute"><command>mpc next</command></action></keybind>
+    <keybind key="XF86MonBrightnessUp"><action name="Execute"><command>xbacklight +10</command></action></keybind>
+    <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>xbacklight -10</command></action></keybind>
+    <keybind key="XF86Mail"><action name="Execute"><command>vivaldi-stable https://inbox.google.com/</command></action></keybind>
+    <keybind key="XF86Search"><action name="Execute"><command>rofi -modi ssh,window,drun,run -show drun</command></action></keybind>
+  <!-- Extra keys -->
+
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
