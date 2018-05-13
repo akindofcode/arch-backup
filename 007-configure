@@ -1,4 +1,5 @@
 #!/bin/bash
+cd dots
 
 # copy .Xresources
 cp .Xresources ~/
