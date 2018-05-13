@@ -1,3 +1,8 @@
+rename dots to dots-vault
+move config files to dots
+edit 007-config
+create a backup script to backup only dot files and another to restore them
+
 # dunst
 
 config dunst and change placement
@@ -55,17 +60,6 @@ monokai
 > config sublime text 3
 
 > config pcmanfm
-
-> config tint2
-    https://github.com/fikriomar16/Tint2-Collections
-    https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/ShareTechMono/complete
-
-> test polybar
-    https://github.com/rmw5601/dotfiles/tree/master/config/polybar
-
-> video
-
-> qbittorrent
 
 > pywal / wpgtk
 pipeline for wpgtk: https://github.com/domsch1988/consave/blob/master/full/openbox/wpgtkmenu.sh
